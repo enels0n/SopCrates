@@ -1,0 +1,106 @@
+displayName: "Example Case (%page%/%pages%)"
+
+denyCommands:
+  - "[player] say You need a key for Example Case"
+denyPush: true
+
+denyOpeningCommands:
+  - "[player] say This case is already being opened"
+denyOpeningPush: false
+
+key:
+  name: "Key for Example Case"
+  lore:
+    - ""
+    - "Single-use key"
+    - ""
+  item: TRIPWIRE_HOOK
+  model: 111111
+
+keyType: key
+
+spin:
+  duration: 5s
+  offset:
+    x: 0.0
+    y: 0.95
+    z: 0.0
+
+hologram:
+  enabled: false
+  hideWhileSpinning: true
+  offset:
+    x: 0.0
+    y: 1.85
+    z: 0.0
+  lines:
+    - "<gold><bold>Example Case</bold></gold>"
+    - "<gray>Right click to open</gray>"
+
+firework:
+  offset:
+    x: 0.0
+    y: 0.7
+    z: 0.0
+
+open_commands: []
+
+prizes:
+  '1':
+    display:
+      material: STONE
+      amount: 16
+      name: "<white>Stone</white>"
+    prize:
+      items:
+        - material: STONE
+          amount: 16
+          name: "<white>Stone</white>"
+      commands:
+        - "[player] say You won 16 Stone"
+    weight: 200
+
+  '2':
+    display:
+      material: DIAMOND
+      amount: 3
+      name: "<aqua>Diamonds</aqua>"
+    prize:
+      items:
+        - material: DIAMOND
+          amount: 3
+          name: "<aqua>Diamonds</aqua>"
+      commands:
+        - "[player] say You won 3 Diamonds"
+    weight: 80
+
+  '3':
+    display:
+      material: GOLDEN_APPLE
+      amount: 2
+      name: "<gold>Golden Apples</gold>"
+    prize:
+      items:
+        - material: GOLDEN_APPLE
+          amount: 2
+          name: "<gold>Golden Apples</gold>"
+      commands:
+        - "[player] say You won 2 Golden Apples"
+    weight: 60
+
+  '4':
+    display:
+      material: CHEST
+      amount: 1
+      name: "<yellow>Starter Kit</yellow>"
+      lore:
+        - "<gray>- Iron tools"
+        - "<gray>- Bread x16"
+    prize:
+      commands:
+        - "[player] say You won a Starter Kit"
+        - "[console] give %player_name% bread 16"
+        - "[console] give %player_name% iron_pickaxe 1"
+        - "[console] give %player_name% iron_axe 1"
+        - "[console] give %player_name% iron_shovel 1"
+    weight: 40

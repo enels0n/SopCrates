@@ -1,0 +1,804 @@
+displayName: "<color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color> <color:#555555>(</color><color:#1A729E>%page%</color><color:#555555>/</color><color:#1A729E>%pages%</color><color:#555555>)</color>" #inventory
+
+#if the player have no key
+denyCommands:
+  - "[console] abroadcast player %player_name% [minimessage] <color:#EEDAB0>❣ ###alocales_holo-survival_case-need-key-1### </color><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><color:#EEDAB0> ###alocales_holo-survival_case-need-key-2###</color>"
+denyPush: true
+
+#if the case is already opening
+denyOpeningCommands:
+  - "[console] abroadcast player %player_name% [minimessage] <color:#EEDAB0>┃ <bold>Этот кейс уже открывается!</bold></color>"
+denyOpeningPush: false
+
+key:
+  name: "<color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color> <color:#35D6DE>ᴋᴇʏ</color>"
+  lore:
+    - ""
+    - "<gray>┃ ###alocales_survival-items_case-key-lore-1### </gray><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><gray>###alocales_survival-items_case-key-lore-2###</gray>"
+    - ""
+  item: TRIPWIRE_HOOK
+  model: 1005
+
+keyType: key
+spin:
+  duration: 5.5s
+  offset:
+    x: 0.0
+    y: 0.95
+    z: 0.0
+
+hologram:
+  enabled: false
+  hideWhileSpinning: true
+  offset:
+    x: 0.0
+    y: 1.85
+    z: 0.0
+
+firework:
+  offset:
+    x: 0.0
+    y: 0.7
+    z: 0.0
+
+open_commands: []
+
+# 
+# [console] abroadcast player %player_name% [minimessage] -> https://docs.advntr.dev/minimessage/format.html
+# other formating -> https://github.com/Iridium-Development/IridiumColorAPI
+
+prizes:
+  '1':
+    display:
+      material: "PINK_PETALS"
+      name: "<dark_green>$</dark_green><green>500</green>"
+      glowing: true
+    prize:
+      commands:
+        - "[console] eco give %player_name% 500"
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><dark_green>$</dark_green><green>500</green><yellow>!</yellow>"
+    weight: 500
+
+  '2':
+    display:
+      material: "DANDELION"
+      name: "<dark_green>$</dark_green><green>1000</green>"
+      glowing: true
+    prize:
+      commands:
+        - "[console] eco give %player_name% 1000"
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><dark_green>$</dark_green><green>1000</green><yellow>!</yellow>"
+    weight: 500
+
+  '3':
+    display:
+      material: "POPPY"
+      name: "<dark_green>$</dark_green><green>2000</green>"
+      glowing: true
+    prize:
+      commands:
+        - "[console] eco give %player_name% 2000"
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><dark_green>$</dark_green><green>2000</green><yellow>!</yellow>"
+    weight: 500
+
+  '4':
+    display:
+      material: "BLUE_ORCHID"
+      name: "<dark_green>$</dark_green><green>3000</green>"
+      glowing: true
+    prize:
+      commands:
+        - "[console] eco give %player_name% 3000"
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><dark_green>$</dark_green><green>3000</green><yellow>!</yellow>"
+    weight: 400
+
+  '5':
+    display:
+      material: "ALLIUM"
+      name: "<dark_green>$</dark_green><green>4000</green>"
+      glowing: true
+    prize:
+      commands:
+        - "[console] eco give %player_name% 4000"
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><dark_green>$</dark_green><green>4000</green><yellow>!</yellow>"
+    weight: 400
+
+  '6':
+    display:
+      material: "AZURE_BLUET"
+      name: "<dark_green>$</dark_green><green>5000</green>"
+      glowing: true
+    prize:
+      commands:
+        - "[console] eco give %player_name% 5000"
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><dark_green>$</dark_green><green>5000</green><yellow>!</yellow>"
+    weight: 400
+
+  '7':
+    display:
+      material: "TORCHFLOWER"
+      name: "<dark_green>$</dark_green><green>10000</green>"
+      glowing: true
+    prize:
+      commands:
+        - "[console] eco give %player_name% 10000"
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><dark_green>$</dark_green><green>10000</green><yellow>!</yellow>"
+    weight: 300
+
+  '8':
+    display:
+      material: "WITHER_ROSE"
+      name: "<dark_green>$</dark_green><green>20000</green>"
+      glowing: true
+    prize:
+      commands:
+        - "[console] eco give %player_name% 20000"
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><dark_green>$</dark_green><green>20000</green><yellow>!</yellow>"
+    weight: 200
+
+  '9':
+    display:
+      material: "OAK_WOOD"
+      name: "<gradient:#AFC144:#95DFA7>Oak wood</gradient>"
+      amount: 32
+    prize:
+      items:
+        - material: "OAK_WOOD"
+          amount: 32
+          name: "<gradient:#AFC144:#95DFA7>Oak wood</gradient>"
+      commands:
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><green>32☓ </green><gradient:#AFC144:#95DFA7>Oak wood</gradient><yellow>!</yellow>"
+    weight: 600
+
+  '10':
+    display:
+      material: "BIRCH_WOOD"
+      name: "<gradient:#AFC144:#95DFA7>Birch wood</gradient>"
+      amount: 32
+    prize:
+      items:
+        - material: "BIRCH_WOOD"
+          amount: 32
+          name: "<gradient:#AFC144:#95DFA7>Birch wood</gradient>"
+      commands:
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><green>32☓ </green><gradient:#AFC144:#95DFA7>Birch wood</gradient><yellow>!</yellow>"
+    weight: 600
+
+  '11':
+    display:
+      material: "SPRUCE_WOOD"
+      name: "<gradient:#AFC144:#95DFA7>Spruce wood</gradient>"
+      amount: 32
+    prize:
+      items:
+        - material: "SPRUCE_WOOD"
+          amount: 32
+          name: "<gradient:#AFC144:#95DFA7>Spruce wood</gradient>"
+      commands:
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><green>32☓ </green><gradient:#AFC144:#95DFA7>Spruce wood</gradient><yellow>!</yellow>"
+    weight: 600
+
+  '12':
+    display:
+      material: "JUNGLE_WOOD"
+      name: "<gradient:#AFC144:#95DFA7>Jungle wood</gradient>"
+      amount: 32
+    prize:
+      items:
+        - material: "JUNGLE_WOOD"
+          amount: 32
+          name: "<gradient:#AFC144:#95DFA7>Jungle wood</gradient>"
+      commands:
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><green>32☓ </green><gradient:#AFC144:#95DFA7>Jungle wood</gradient><yellow>!</yellow>"
+    weight: 600
+
+  '13':
+    display:
+      material: "ACACIA_WOOD"
+      name: "<gradient:#AFC144:#95DFA7>Acacia wood</gradient>"
+      amount: 32
+    prize:
+      items:
+        - material: "ACACIA_WOOD"
+          amount: 32
+          name: "<gradient:#AFC144:#95DFA7>Acacia wood</gradient>"
+      commands:
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><green>32☓ </green><gradient:#AFC144:#95DFA7>Acacia wood</gradient><yellow>!</yellow>"
+    weight: 600
+
+  '14':
+    display:
+      material: "DARK_OAK_WOOD"
+      name: "<gradient:#AFC144:#95DFA7>Dark oak wood</gradient>"
+      amount: 32
+    prize:
+      items:
+        - material: "DARK_OAK_WOOD"
+          amount: 32
+          name: "<gradient:#AFC144:#95DFA7>Dark oak wood</gradient>"
+      commands:
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><green>32☓ </green><gradient:#AFC144:#95DFA7>Dark oak wood</gradient><yellow>!</yellow>"
+    weight: 600
+
+  '15':
+    display:
+      material: "MANGROVE_WOOD"
+      name: "<gradient:#AFC144:#95DFA7>Mangrove wood</gradient>"
+      amount: 32
+    prize:
+      items:
+        - material: "MANGROVE_WOOD"
+          amount: 32
+          name: "<gradient:#AFC144:#95DFA7>Mangrove wood</gradient>"
+      commands:
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><green>32☓ </green><gradient:#AFC144:#95DFA7>Mangrove wood</gradient><yellow>!</yellow>"
+    weight: 600
+
+  '16':
+    display:
+      material: "CHERRY_WOOD"
+      name: "<gradient:#AFC144:#95DFA7>Cherry wood</gradient>"
+      amount: 32
+    prize:
+      items:
+        - material: "CHERRY_WOOD"
+          amount: 32
+          name: "<gradient:#AFC144:#95DFA7>Cherry wood</gradient>"
+      commands:
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><green>32☓ </green><gradient:#AFC144:#95DFA7>Cherry wood</gradient><yellow>!</yellow>"
+    weight: 600
+
+  '17':
+    display:
+      material: "WARPED_HYPHAE"
+      name: "<gradient:#AFC144:#95DFA7>Warped hyphae</gradient>"
+      amount: 32
+    prize:
+      items:
+        - material: "WARPED_HYPHAE"
+          amount: 32
+          name: "<gradient:#AFC144:#95DFA7>Warped hyphae</gradient>"
+      commands:
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><green>32☓ </green><gradient:#AFC144:#95DFA7>Warped hyphae</gradient><yellow>!</yellow>"
+    weight: 600
+
+  '18':
+    display:
+      material: "CRIMSON_HYPHAE"
+      name: "<gradient:#AFC144:#95DFA7>Crimson hyphae</gradient>"
+      amount: 32
+    prize:
+      items:
+        - material: "CRIMSON_HYPHAE"
+          amount: 32
+          name: "<gradient:#AFC144:#95DFA7>Crimson hyphae</gradient>"
+      commands:
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><green>32☓ </green><gradient:#AFC144:#95DFA7>Crimson hyphae</gradient><yellow>!</yellow>"
+    weight: 600
+
+  '19':
+    display:
+      material: "DIAMOND"
+      name: "<color:#12CEBE>Diamond</color>"
+      amount: 8
+    prize:
+      items:
+        - material: "DIAMOND"
+          amount: 8
+          name: "<color:#12CEBE>Diamond</color>"
+      commands:
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><green>8☓ </green><color:#12CEBE>Diamond</color><yellow>!</yellow>"
+    weight: 400
+
+  '20':
+    display:
+      material: "EMERALD"
+      name: "<color:#20C548>Emerald</color>"
+      amount: 16
+    prize:
+      items:
+        - material: "EMERALD"
+          amount: 16
+          name: "<color:#20C548>Emerald</color>"
+      commands:
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><green>16☓ </green><color:#20C548>Emerald</color><yellow>!</yellow>"
+    weight: 400
+
+  '21':
+    display:
+      material: "RABBIT_FOOT"
+      name: "<gradient:#BD003D:#FD2B92>50 Crons</gradient>"
+      model: 1008
+    prize:
+      commands:
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><gradient:#BD003D:#FD2B92>50 Crons</gradient><yellow>!</yellow>"
+        - "[console] mplaceholders givecrons %player_name% 50"
+    weight: 70
+
+  '22':
+    display:
+      material: "RABBIT_FOOT"
+      name: "<gradient:#BD003D:#FD2B92>100 Crons</gradient>"
+      model: 1008
+    prize:
+      commands:
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><gradient:#BD003D:#FD2B92>100 Crons</gradient><yellow>!</yellow>"
+        - "[console] mplaceholders givecrons %player_name% 100"
+    weight: 50
+
+  '23':
+    display:
+      material: "RABBIT_FOOT"
+      name: "<gradient:#BD003D:#FD2B92>200 Crons</gradient>"
+      model: 1008
+    prize:
+      commands:
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><gradient:#BD003D:#FD2B92>200 Crons</gradient><yellow>!</yellow>"
+        - "[console] mplaceholders givecrons %player_name% 200"
+    weight: 30
+
+  '24':
+    display:
+      material: "FEATHER"
+      name: "<gradient:#2BECFD:#2BFDC0>10m flight time</gradient>"
+    prize:
+      commands:
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><gradient:#2BECFD:#2BFDC0>10m flight time</gradient><yellow>!</yellow>"
+        - "[console] tf give %player_name% 10m"
+    weight: 400
+
+  '25':
+    display:
+      material: "GOLDEN_APPLE"
+      name: "<color:#EBD100>Golden apple</color>"
+      amount: 16
+    prize:
+      items:
+        - material: "GOLDEN_APPLE"
+          amount: 16
+          name: "<color:#EBD100>Golden apple</color>"
+      commands:
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><green>16☓ </green><color:#EBD100>Golden apple</color><yellow>!</yellow>"
+    weight: 400
+
+  '26':
+    display:
+      material: "ENCHANTED_GOLDEN_APPLE"
+      name: "<color:#EB00E5>Enchanted golden apple</color>"
+      amount: 8
+    prize:
+      items:
+        - material: "ENCHANTED_GOLDEN_APPLE"
+          amount: 8
+          name: "<color:#EB00E5>Enchanted golden apple</color>"
+      commands:
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><green>8☓ </green><color:#EB00E5>Enchanted golden apple</color><yellow>!</yellow>"
+    weight: 250
+
+  '27':
+    display:
+      material: "DIAMOND_SWORD"
+      name: "<gradient:#00C4EB:#00EBBF><bold>ᴀꜰᴋ ꜱᴡᴏʀᴅ</bold></gradient>"
+      amount: 1
+      enchantments:
+        - "UNBREAKING:1"
+        - "ABRASION:1"
+        - "MENDING:1"
+    prize:
+      items:
+        - material: "DIAMOND_SWORD"
+          amount: 1
+          name: "<gradient:#00C4EB:#00EBBF><bold>ᴀꜰᴋ ꜱᴡᴏʀᴅ</bold></gradient>"
+          enchantments:
+            - "UNBREAKING:1"
+            - "ABRASION:1"
+            - "MENDING:1"
+      commands:
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><gradient:#00C4EB:#00EBBF><bold>ᴀꜰᴋ ꜱᴡᴏʀᴅ</bold></gradient><yellow>!</yellow>"
+    weight: 250
+
+  '28':
+    display:
+      material: "DIAMOND_PICKAXE"
+      name: "<gradient:#00C4EB:#00EBBF><bold>ᴀꜰᴋ ᴘɪᴄᴋᴀxᴇ</bold></gradient>"
+      amount: 1
+      enchantments:
+        - "UNBREAKING:1"
+        - "FORTUNE:1"
+        - "MENDING:1"
+        - "DRILL:3"
+    prize:
+      items:
+        - material: "DIAMOND_PICKAXE"
+          amount: 1
+          name: "<gradient:#00C4EB:#00EBBF><bold>ᴀꜰᴋ ᴘɪᴄᴋᴀxᴇ</bold></gradient>"
+          enchantments:
+            - "UNBREAKING:1"
+            - "FORTUNE:1"
+            - "MENDING:1"
+            - "DRILL:3"
+      commands:
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><gradient:#00C4EB:#00EBBF><bold>ᴀꜰᴋ ᴘɪᴄᴋᴀxᴇ</bold></gradient><yellow>!</yellow>"
+    weight: 250
+
+  '29':
+    display:
+      material: "DIAMOND_SHOVEL"
+      name: "<gradient:#00C4EB:#00EBBF><bold>ᴀꜰᴋ ꜱʜᴏᴠᴇʟ</bold></gradient>"
+      amount: 1
+      enchantments:
+        - "UNBREAKING:1"
+        - "FORTUNE:1"
+        - "MENDING:1"
+        - "DRILL:3"
+    prize:
+      items:
+        - material: "DIAMOND_SHOVEL"
+          amount: 1
+          name: "<gradient:#00C4EB:#00EBBF><bold>ᴀꜰᴋ ꜱʜᴏᴠᴇʟ</bold></gradient>"
+          enchantments:
+            - "UNBREAKING:1"
+            - "FORTUNE:1"
+            - "MENDING:1"
+            - "DRILL:3"
+      commands:
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><gradient:#00C4EB:#00EBBF><bold>ᴀꜰᴋ ꜱʜᴏᴠᴇʟ</bold></gradient><yellow>!</yellow>"
+    weight: 250
+
+  '30':
+    display:
+      material: "DIAMOND_AXE"
+      name: "<gradient:#00C4EB:#00EBBF><bold>ᴀꜰᴋ ᴀxᴇ</bold></gradient>"
+      amount: 1
+      enchantments:
+        - "UNBREAKING:1"
+        - "CRITICALS:1"
+        - "MENDING:1"
+        - "LUMBERJACK:3"
+    prize:
+      items:
+        - material: "DIAMOND_AXE"
+          amount: 1
+          name: "<gradient:#00C4EB:#00EBBF><bold>ᴀꜰᴋ ᴀxᴇ</bold></gradient>"
+          enchantments:
+            - "UNBREAKING:1"
+            - "CRITICALS:1"
+            - "MENDING:1"
+            - "LUMBERJACK:3"
+      commands:
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><gradient:#00C4EB:#00EBBF><bold>ᴀꜰᴋ ᴀxᴇ</bold></gradient><yellow>!</yellow>"
+    weight: 250
+
+  '31':
+    display:
+      material: "DIAMOND_HOE"
+      name: "<gradient:#00C4EB:#00EBBF><bold>ᴀꜰᴋ ʜᴏᴇ</bold></gradient>"
+      amount: 1
+      enchantments:
+        - "UNBREAKING:1"
+        - "TILLER:1"
+        - "MENDING:1"
+        - "REPLENISH:1"
+    prize:
+      items:
+        - material: "DIAMOND_HOE"
+          amount: 1
+          name: "<gradient:#00C4EB:#00EBBF><bold>ᴀꜰᴋ ʜᴏᴇ</bold></gradient>"
+          enchantments:
+            - "UNBREAKING:1"
+            - "TILLER:1"
+            - "MENDING:1"
+            - "REPLENISH:1"
+      commands:
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><gradient:#00C4EB:#00EBBF><bold>ᴀꜰᴋ ʜᴏᴇ</bold></gradient><yellow>!</yellow>"
+    weight: 250
+
+  '32':
+    display:
+      material: "DIAMOND_HELMET"
+      name: "<gradient:#00C4EB:#00EBBF><bold>ᴀꜰᴋ ʜᴇʟᴍᴇᴛ</bold></gradient>"
+      amount: 1
+      enchantments:
+        - "UNBREAKING:1"
+        - "ARCANE_DEFENCE:2"
+        - "BLOCK_BREATHER:2"
+        - "FORTITUDE:1"
+    prize:
+      items:
+        - material: "DIAMOND_HELMET"
+          amount: 1
+          name: "<gradient:#00C4EB:#00EBBF><bold>ᴀꜰᴋ ʜᴇʟᴍᴇᴛ</bold></gradient>"
+          enchantments:
+            - "UNBREAKING:1"
+            - "ARCANE_DEFENCE:2"
+            - "BLOCK_BREATHER:2"
+            - "FORTITUDE:1"
+      commands:
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><gradient:#00C4EB:#00EBBF><bold>ᴀꜰᴋ ʜᴇʟᴍᴇᴛ</bold></gradient><yellow>!</yellow>"
+    weight: 250
+
+  '33':
+    display:
+      material: "DIAMOND_CHESTPLATE"
+      name: "<gradient:#00C4EB:#00EBBF><bold>ᴀꜰᴋ ᴄʜᴇꜱᴛᴘʟᴀᴛᴇ</bold></gradient>"
+      amount: 1
+      enchantments:
+        - "UNBREAKING:2"
+        - "BLAST_PROTECTION:3"
+        - "THORNS:1"
+        - "MENDING:1"
+    prize:
+      items:
+        - material: "DIAMOND_CHESTPLATE"
+          amount: 1
+          name: "<gradient:#00C4EB:#00EBBF><bold>ᴀꜰᴋ ᴄʜᴇꜱᴛᴘʟᴀᴛᴇ</bold></gradient>"
+          enchantments:
+            - "UNBREAKING:2"
+            - "BLAST_PROTECTION:3"
+            - "THORNS:1"
+            - "MENDING:1"
+      commands:
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><gradient:#00C4EB:#00EBBF><bold>ᴀꜰᴋ ᴄʜᴇꜱᴛᴘʟᴀᴛᴇ</bold></gradient><yellow>!</yellow>"
+    weight: 250
+
+  '34':
+    display:
+      material: "DIAMOND_LEGGINGS"
+      name: "<gradient:#00C4EB:#00EBBF><bold>ᴀꜰᴋ ʟᴇɢɢɪɴɢꜱ</bold></gradient>"
+      amount: 1
+      enchantments:
+        - "UNBREAKING:2"
+        - "SWIFT_SNEAK:1"
+        - "POISON_IVY:1"
+        - "FORTITUDE:1"
+    prize:
+      items:
+        - material: "DIAMOND_LEGGINGS"
+          amount: 1
+          name: "<gradient:#00C4EB:#00EBBF><bold>ᴀꜰᴋ ʟᴇɢɢɪɴɢꜱ</bold></gradient>"
+          enchantments:
+            - "UNBREAKING:2"
+            - "SWIFT_SNEAK:1"
+            - "POISON_IVY:1"
+            - "FORTITUDE:1"
+      commands:
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><gradient:#00C4EB:#00EBBF><bold>ᴀꜰᴋ ʟᴇɢɢɪɴɢꜱ</bold></gradient><yellow>!</yellow>"
+    weight: 250
+
+  '35':
+    display:
+      material: "DIAMOND_BOOTS"
+      name: "<gradient:#00C4EB:#00EBBF><bold>ᴀꜰᴋ ʙᴏᴏᴛꜱ</bold></gradient>"
+      amount: 1
+      enchantments:
+        - "UNBREAKING:2"
+        - "FEATHER_STEP:1"
+        - "PROTECTION:2"
+        - "FORTITUDE:1"
+    prize:
+      items:
+        - material: "DIAMOND_BOOTS"
+          amount: 1
+          name: "<gradient:#00C4EB:#00EBBF><bold>ᴀꜰᴋ ʙᴏᴏᴛꜱ</bold></gradient>"
+          enchantments:
+            - "UNBREAKING:2"
+            - "FEATHER_STEP:1"
+            - "PROTECTION:2"
+            - "FORTITUDE:1"
+      commands:
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><gradient:#00C4EB:#00EBBF><bold>ᴀꜰᴋ ʙᴏᴏᴛꜱ</bold></gradient><yellow>!</yellow>"
+    weight: 250
+
+  '36':
+    display:
+      material: "NETHERITE_SWORD"
+      name: "<gradient:#8F5B81:#442D2C><bold>ᴀꜰᴋ ꜱᴡᴏʀᴅ</bold></gradient>"
+      amount: 1
+      enchantments:
+        - "UNBREAKING:1"
+        - "ABRASION:1"
+        - "MENDING:1"
+    prize:
+      items:
+        - material: "NETHERITE_SWORD"
+          amount: 1
+          name: "<gradient:#8F5B81:#8F5D5B><bold>ᴀꜰᴋ ꜱᴡᴏʀᴅ</bold></gradient>"
+          enchantments:
+            - "UNBREAKING:1"
+            - "ABRASION:1"
+            - "MENDING:1"
+      commands:
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><gradient:#8F5B81:#8F5D5B><bold>ᴀꜰᴋ ꜱᴡᴏʀᴅ</bold></gradient><yellow>!</yellow>"
+    weight: 120
+
+  '37':
+    display:
+      material: "NETHERITE_PICKAXE"
+      name: "<gradient:#8F5B81:#442D2C><bold>ᴀꜰᴋ ᴘɪᴄᴋᴀxᴇ</bold></gradient>"
+      amount: 1
+      enchantments:
+        - "UNBREAKING:1"
+        - "FORTUNE:1"
+        - "MENDING:1"
+        - "DRILL:3"
+    prize:
+      items:
+        - material: "NETHERITE_PICKAXE"
+          amount: 1
+          name: "<gradient:#8F5B81:#8F5D5B><bold>ᴀꜰᴋ ᴘɪᴄᴋᴀxᴇ</bold></gradient>"
+          enchantments:
+            - "UNBREAKING:1"
+            - "FORTUNE:1"
+            - "MENDING:1"
+            - "DRILL:3"
+      commands:
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><gradient:#8F5B81:#8F5D5B><bold>ᴀꜰᴋ ᴘɪᴄᴋᴀxᴇ</bold></gradient><yellow>!</yellow>"
+    weight: 120
+
+  '38':
+    display:
+      material: "NETHERITE_SHOVEL"
+      name: "<gradient:#8F5B81:#442D2C><bold>ᴀꜰᴋ ꜱʜᴏᴠᴇʟ</bold></gradient>"
+      amount: 1
+      enchantments:
+        - "UNBREAKING:1"
+        - "FORTUNE:1"
+        - "MENDING:1"
+        - "DRILL:3"
+    prize:
+      items:
+        - material: "NETHERITE_SHOVEL"
+          amount: 1
+          name: "<gradient:#8F5B81:#8F5D5B><bold>ᴀꜰᴋ ꜱʜᴏᴠᴇʟ</bold></gradient>"
+          enchantments:
+            - "UNBREAKING:1"
+            - "FORTUNE:1"
+            - "MENDING:1"
+            - "DRILL:3"
+      commands:
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><gradient:#8F5B81:#8F5D5B><bold>ᴀꜰᴋ ꜱʜᴏᴠᴇʟ</bold></gradient><yellow>!</yellow>"
+    weight: 120
+
+  '39':
+    display:
+      material: "NETHERITE_AXE"
+      name: "<gradient:#8F5B81:#442D2C><bold>ᴀꜰᴋ ᴀxᴇ</bold></gradient>"
+      amount: 1
+      enchantments:
+        - "UNBREAKING:1"
+        - "CRITICALS:1"
+        - "MENDING:1"
+        - "LUMBERJACK:3"
+    prize:
+      items:
+        - material: "NETHERITE_AXE"
+          amount: 1
+          name: "<gradient:#8F5B81:#8F5D5B><bold>ᴀꜰᴋ ᴀxᴇ</bold></gradient>"
+          enchantments:
+            - "UNBREAKING:1"
+            - "CRITICALS:1"
+            - "MENDING:1"
+            - "LUMBERJACK:3"
+      commands:
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><gradient:#8F5B81:#8F5D5B><bold>ᴀꜰᴋ ᴀxᴇ</bold></gradient><yellow>!</yellow>"
+    weight: 120
+
+  '40':
+    display:
+      material: "NETHERITE_HOE"
+      name: "<gradient:#8F5B81:#442D2C><bold>ᴀꜰᴋ ʜᴏᴇ</bold></gradient>"
+      amount: 1
+      enchantments:
+        - "UNBREAKING:10"
+        - "TILLER:1"
+        - "MENDING:1"
+        - "REPLENISH:1"
+    prize:
+      items:
+        - material: "NETHERITE_HOE"
+          amount: 1
+          name: "<gradient:#8F5B81:#8F5D5B><bold>ᴀꜰᴋ ʜᴏᴇ</bold></gradient>"
+          enchantments:
+            - "UNBREAKING:10"
+            - "TILLER:1"
+            - "MENDING:1"
+            - "REPLENISH:1"
+      commands:
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><gradient:#8F5B81:#8F5D5B><bold>ᴀꜰᴋ ʜᴏᴇ</bold></gradient><yellow>!</yellow>"
+    weight: 120
+
+  '41':
+    display:
+      material: "NETHERITE_HELMET"
+      name: "<gradient:#8F5B81:#442D2C><bold>ᴀꜰᴋ ʜᴇʟᴍᴇᴛ</bold></gradient>"
+      amount: 1
+      enchantments:
+        - "UNBREAKING:1"
+        - "ARCANE_DEFENCE:2"
+        - "BLOCK_BREATHER:2"
+        - "FORTITUDE:1"
+    prize:
+      items:
+        - material: "NETHERITE_HELMET"
+          amount: 1
+          name: "<gradient:#8F5B81:#8F5D5B><bold>ᴀꜰᴋ ʜᴇʟᴍᴇᴛ</bold></gradient>"
+          enchantments:
+            - "UNBREAKING:1"
+            - "ARCANE_DEFENCE:2"
+            - "BLOCK_BREATHER:2"
+            - "FORTITUDE:1"
+      commands:
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><gradient:#8F5B81:#8F5D5B><bold>ᴀꜰᴋ ʜᴇʟᴍᴇᴛ</bold></gradient><yellow>!</yellow>"
+    weight: 120
+
+  '42':
+    display:
+      material: "NETHERITE_CHESTPLATE"
+      name: "<gradient:#8F5B81:#442D2C><bold>ᴀꜰᴋ ᴄʜᴇꜱᴛᴘʟᴀᴛᴇ</bold></gradient>"
+      amount: 1
+      enchantments:
+        - "UNBREAKING:2"
+        - "BLAST_PROTECTION:3"
+        - "THORNS:1"
+        - "MENDING:1"
+    prize:
+      items:
+        - material: "NETHERITE_CHESTPLATE"
+          amount: 1
+          name: "<gradient:#8F5B81:#8F5D5B><bold>ᴀꜰᴋ ᴄʜᴇꜱᴛᴘʟᴀᴛᴇ</bold></gradient>"
+          enchantments:
+            - "UNBREAKING:2"
+            - "BLAST_PROTECTION:3"
+            - "THORNS:1"
+            - "MENDING:1"
+      commands:
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><gradient:#8F5B81:#8F5D5B><bold>ᴀꜰᴋ ᴄʜᴇꜱᴛᴘʟᴀᴛᴇ</bold></gradient><yellow>!</yellow>"
+    weight: 120
+
+  '43':
+    display:
+      material: "NETHERITE_LEGGINGS"
+      name: "<gradient:#8F5B81:#442D2C><bold>ᴀꜰᴋ ʟᴇɢɢɪɴɢꜱ</bold></gradient>"
+      amount: 1
+      enchantments:
+        - "UNBREAKING:2"
+        - "SWIFT_SNEAK:1"
+        - "POISON_IVY:1"
+        - "FORTITUDE:1"
+    prize:
+      items:
+        - material: "NETHERITE_LEGGINGS"
+          amount: 1
+          name: "<gradient:#8F5B81:#8F5D5B><bold>ᴀꜰᴋ ʟᴇɢɢɪɴɢꜱ</bold></gradient>"
+          enchantments:
+            - "UNBREAKING:2"
+            - "SWIFT_SNEAK:1"
+            - "POISON_IVY:1"
+            - "FORTITUDE:1"
+      commands:
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><gradient:#8F5B81:#8F5D5B><bold>ᴀꜰᴋ ʟᴇɢɢɪɴɢꜱ</bold></gradient><yellow>!</yellow>"
+    weight: 120
+
+  '44':
+    display:
+      material: "NETHERITE_BOOTS"
+      name: "<gradient:#8F5B81:#442D2C><bold>ᴀꜰᴋ ʙᴏᴏᴛꜱ</bold></gradient>"
+      amount: 1
+      enchantments:
+        - "UNBREAKING:2"
+        - "FEATHER_STEP:1"
+        - "PROTECTION:2"
+        - "FORTITUDE:1"
+    prize:
+      items:
+        - material: "NETHERITE_BOOTS"
+          amount: 1
+          name: "<gradient:#8F5B81:#8F5D5B><bold>ᴀꜰᴋ ʙᴏᴏᴛꜱ</bold></gradient>"
+          enchantments:
+            - "UNBREAKING:2"
+            - "FEATHER_STEP:1"
+            - "PROTECTION:2"
+            - "FORTITUDE:1"
+      commands:
+        - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#1A989E><bold>ᴀꜰᴋ ᴄᴀꜱᴇ</bold></color><yellow> и выиграли </yellow><gradient:#8F5B81:#8F5D5B><bold>ᴀꜰᴋ ʙᴏᴏᴛꜱ</bold></gradient><yellow>!</yellow>"
+    weight: 120

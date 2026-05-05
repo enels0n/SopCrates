@@ -24,21 +24,25 @@ spin:
   duration: 5.0s
   offset:
     x: 0.0
-    y: 0.95
+    y: 1.0
     z: 0.0
 
 hologram:
-  enabled: false
+  enabled: true
   hideWhileSpinning: true
   offset:
     x: 0.0
-    y: 1.85
+    y: 0.7
     z: 0.0
+  lines:
+    - "&f左 %alocales_holo-survival_case-left-click%"
+    - "&f右 %alocales_holo-survival_case-right-click%"
+    - "<color:#35D6DE>ᴄᴀꜱᴇ</color> <gradient:#6944C1:#8B5CF6><bold>/ꜰʀᴇᴇ</bold></gradient>"
 
 firework:
   offset:
     x: 0.0
-    y: 0.7
+    y: 1.1
     z: 0.0
 
 open_commands: []
@@ -53,6 +57,9 @@ prizes:
       material: "PINK_PETALS"
       name: "<dark_green>$</dark_green><green>500</green>"
       glowing: true
+      lore:
+        - ''
+        - '<#e5f2b5>🎲 Chance: {chance}%</#e5f2b5>'
     prize:
       commands:
         - "[console] eco give %player_name% 500"
@@ -64,6 +71,9 @@ prizes:
       material: "DANDELION"
       name: "<dark_green>$</dark_green><green>1000</green>"
       glowing: true
+      lore:
+        - ''
+        - '<#e5f2b5>🎲 Chance: {chance}%</#e5f2b5>'
     prize:
       commands:
         - "[console] eco give %player_name% 1000"
@@ -75,6 +85,9 @@ prizes:
       material: "POPPY"
       name: "<dark_green>$</dark_green><green>2000</green>"
       glowing: true
+      lore:
+        - ''
+        - '<#e5f2b5>🎲 Chance: {chance}%</#e5f2b5>'
     prize:
       commands:
         - "[console] eco give %player_name% 2000"
@@ -86,6 +99,9 @@ prizes:
       material: "BLUE_ORCHID"
       name: "<dark_green>$</dark_green><green>3000</green>"
       glowing: true
+      lore:
+        - ''
+        - '<#e5f2b5>🎲 Chance: {chance}%</#e5f2b5>'
     prize:
       commands:
         - "[console] eco give %player_name% 3000"
@@ -97,6 +113,9 @@ prizes:
       material: "ALLIUM"
       name: "<dark_green>$</dark_green><green>4000</green>"
       glowing: true
+      lore:
+        - ''
+        - '<#e5f2b5>🎲 Chance: {chance}%</#e5f2b5>'
     prize:
       commands:
         - "[console] eco give %player_name% 4000"
@@ -108,6 +127,9 @@ prizes:
       material: "AZURE_BLUET"
       name: "<dark_green>$</dark_green><green>5000</green>"
       glowing: true
+      lore:
+        - ''
+        - '<#e5f2b5>🎲 Chance: {chance}%</#e5f2b5>'
     prize:
       commands:
         - "[console] eco give %player_name% 5000"
@@ -119,6 +141,9 @@ prizes:
       material: "TORCHFLOWER"
       name: "<dark_green>$</dark_green><green>10000</green>"
       glowing: true
+      lore:
+        - ''
+        - '<#e5f2b5>🎲 Chance: {chance}%</#e5f2b5>'
     prize:
       commands:
         - "[console] eco give %player_name% 10000"
@@ -130,6 +155,9 @@ prizes:
       material: "OAK_LOG"
       name: "<gradient:#AFC144:#95DFA7>Oak log</gradient>"
       amount: 24
+      lore:
+        - ''
+        - '<#e5f2b5>🎲 Chance: {chance}%</#e5f2b5>'
     prize:
       items:
         - material: "OAK_LOG"
@@ -144,6 +172,9 @@ prizes:
       material: "BIRCH_LOG"
       name: "<gradient:#AFC144:#95DFA7>Birch log</gradient>"
       amount: 24
+      lore:
+        - ''
+        - '<#e5f2b5>🎲 Chance: {chance}%</#e5f2b5>'
     prize:
       items:
         - material: "BIRCH_LOG"
@@ -158,6 +189,9 @@ prizes:
       material: "SPRUCE_LOG"
       name: "<gradient:#AFC144:#95DFA7>Spruce log</gradient>"
       amount: 24
+      lore:
+        - ''
+        - '<#e5f2b5>🎲 Chance: {chance}%</#e5f2b5>'
     prize:
       items:
         - material: "SPRUCE_LOG"
@@ -172,6 +206,9 @@ prizes:
       material: "JUNGLE_LOG"
       name: "<gradient:#AFC144:#95DFA7>Jungle log</gradient>"
       amount: 24
+      lore:
+        - ''
+        - '<#e5f2b5>🎲 Chance: {chance}%</#e5f2b5>'
     prize:
       items:
         - material: "JUNGLE_LOG"
@@ -186,6 +223,9 @@ prizes:
       material: "ACACIA_LOG"
       name: "<gradient:#AFC144:#95DFA7>Acacia log</gradient>"
       amount: 24
+      lore:
+        - ''
+        - '<#e5f2b5>🎲 Chance: {chance}%</#e5f2b5>'
     prize:
       items:
         - material: "ACACIA_LOG"
@@ -200,6 +240,9 @@ prizes:
       material: "DARK_OAK_LOG"
       name: "<gradient:#AFC144:#95DFA7>Dark oak log</gradient>"
       amount: 24
+      lore:
+        - ''
+        - '<#e5f2b5>🎲 Chance: {chance}%</#e5f2b5>'
     prize:
       items:
         - material: "DARK_OAK_LOG"
@@ -214,6 +257,9 @@ prizes:
       material: "MANGROVE_LOG"
       name: "<gradient:#AFC144:#95DFA7>Mangrove log</gradient>"
       amount: 24
+      lore:
+        - ''
+        - '<#e5f2b5>🎲 Chance: {chance}%</#e5f2b5>'
     prize:
       items:
         - material: "MANGROVE_LOG"
@@ -228,6 +274,9 @@ prizes:
       material: "CHERRY_LOG"
       name: "<gradient:#AFC144:#95DFA7>Cherry log</gradient>"
       amount: 24
+      lore:
+        - ''
+        - '<#e5f2b5>🎲 Chance: {chance}%</#e5f2b5>'
     prize:
       items:
         - material: "CHERRY_LOG"
@@ -242,6 +291,9 @@ prizes:
       material: "WARPED_STEM"
       name: "<gradient:#AFC144:#95DFA7>Warped stem</gradient>"
       amount: 24
+      lore:
+        - ''
+        - '<#e5f2b5>🎲 Chance: {chance}%</#e5f2b5>'
     prize:
       items:
         - material: "WARPED_STEM"
@@ -256,6 +308,9 @@ prizes:
       material: "CRIMSON_STEM"
       name: "<gradient:#AFC144:#95DFA7>Crimson stem</gradient>"
       amount: 24
+      lore:
+        - ''
+        - '<#e5f2b5>🎲 Chance: {chance}%</#e5f2b5>'
     prize:
       items:
         - material: "CRIMSON_STEM"
@@ -270,6 +325,9 @@ prizes:
       material: "DIAMOND"
       name: "<color:#12CEBE>Diamond</color>"
       amount: 3
+      lore:
+        - ''
+        - '<#e5f2b5>🎲 Chance: {chance}%</#e5f2b5>'
     prize:
       items:
         - material: "DIAMOND"
@@ -284,6 +342,9 @@ prizes:
       material: "EMERALD"
       name: "<color:#20C548>Emerald</color>"
       amount: 9
+      lore:
+        - ''
+        - '<#e5f2b5>🎲 Chance: {chance}%</#e5f2b5>'
     prize:
       items:
         - material: "EMERALD"
@@ -297,6 +358,9 @@ prizes:
     display:
       material: "FEATHER"
       name: "<gradient:#2BECFD:#2BFDC0>10m flight time</gradient>"
+      lore:
+        - ''
+        - '<#e5f2b5>🎲 Chance: {chance}%</#e5f2b5>'
     prize:
       commands:
         - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#35D6DE>ᴄᴀꜱᴇ</color> <gradient:#6944C1:#8B5CF6><bold>/ꜰʀᴇᴇ</bold></gradient><yellow> и выиграли </yellow><gradient:#2BECFD:#2BFDC0>10m flight time</gradient><yellow>!</yellow>"
@@ -308,6 +372,9 @@ prizes:
       material: "GOLDEN_APPLE"
       name: "<color:#EBD100>Golden apple</color>"
       amount: 6
+      lore:
+        - ''
+        - '<#e5f2b5>🎲 Chance: {chance}%</#e5f2b5>'
     prize:
       items:
         - material: "GOLDEN_APPLE"
@@ -322,6 +389,9 @@ prizes:
       material: "ENCHANTED_GOLDEN_APPLE"
       name: "<color:#EB00E5>Enchanted golden apple</color>"
       amount: 1
+      lore:
+        - ''
+        - '<#e5f2b5>🎲 Chance: {chance}%</#e5f2b5>'
     prize:
       items:
         - material: "ENCHANTED_GOLDEN_APPLE"
@@ -338,6 +408,9 @@ prizes:
       amount: 1
       enchantments:
         - "UNBREAKING:1"
+      lore:
+        - ''
+        - '<#e5f2b5>🎲 Chance: {chance}%</#e5f2b5>'
     prize:
       items:
         - material: "DIAMOND_SWORD"
@@ -356,6 +429,9 @@ prizes:
       amount: 1
       enchantments:
         - "UNBREAKING:1"
+      lore:
+        - ''
+        - '<#e5f2b5>🎲 Chance: {chance}%</#e5f2b5>'
     prize:
       items:
         - material: "DIAMOND_PICKAXE"
@@ -374,6 +450,9 @@ prizes:
       amount: 1
       enchantments:
         - "UNBREAKING:1"
+      lore:
+        - ''
+        - '<#e5f2b5>🎲 Chance: {chance}%</#e5f2b5>'
     prize:
       items:
         - material: "DIAMOND_SHOVEL"
@@ -392,6 +471,9 @@ prizes:
       amount: 1
       enchantments:
         - "UNBREAKING:1"
+      lore:
+        - ''
+        - '<#e5f2b5>🎲 Chance: {chance}%</#e5f2b5>'
     prize:
       items:
         - material: "DIAMOND_AXE"
@@ -410,6 +492,9 @@ prizes:
       amount: 1
       enchantments:
         - "UNBREAKING:1"
+      lore:
+        - ''
+        - '<#e5f2b5>🎲 Chance: {chance}%</#e5f2b5>'
     prize:
       items:
         - material: "DIAMOND_HOE"
@@ -428,6 +513,9 @@ prizes:
       amount: 1
       enchantments:
         - "UNBREAKING:1"
+      lore:
+        - ''
+        - '<#e5f2b5>🎲 Chance: {chance}%</#e5f2b5>'
     prize:
       items:
         - material: "DIAMOND_HELMET"
@@ -446,6 +534,9 @@ prizes:
       amount: 1
       enchantments:
         - "UNBREAKING:1"
+      lore:
+        - ''
+        - '<#e5f2b5>🎲 Chance: {chance}%</#e5f2b5>'
     prize:
       items:
         - material: "DIAMOND_CHESTPLATE"
@@ -464,6 +555,9 @@ prizes:
       amount: 1
       enchantments:
         - "UNBREAKING:1"
+      lore:
+        - ''
+        - '<#e5f2b5>🎲 Chance: {chance}%</#e5f2b5>'
     prize:
       items:
         - material: "DIAMOND_LEGGINGS"
@@ -482,6 +576,9 @@ prizes:
       amount: 1
       enchantments:
         - "UNBREAKING:1"
+      lore:
+        - ''
+        - '<#e5f2b5>🎲 Chance: {chance}%</#e5f2b5>'
     prize:
       items:
         - material: "DIAMOND_BOOTS"
@@ -505,6 +602,8 @@ prizes:
         - "<gray>- Iron axe</gray>"
         - "<gray>- Iron hoe</gray>"
         - "<gray>- Torch x8</gray>"
+        - ''
+        - '<#e5f2b5>🎲 Chance: {chance}%</#e5f2b5>'
     prize:
       commands:
         - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#35D6DE>ᴄᴀꜱᴇ</color> <gradient:#6944C1:#8B5CF6><bold>/ꜰʀᴇᴇ</bold></gradient><yellow> и выиграли </yellow><color:#EBD100>Toolkit</color><yellow>!</yellow>"
@@ -522,6 +621,8 @@ prizes:
         - "<gray>- Iron leggings</gray>"
         - "<gray>- Iron boots</gray>"
         - "<gray>- Shield</gray>"
+        - ''
+        - '<#e5f2b5>🎲 Chance: {chance}%</#e5f2b5>'
     prize:
       commands:
         - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#35D6DE>ᴄᴀꜱᴇ</color> <gradient:#6944C1:#8B5CF6><bold>/ꜰʀᴇᴇ</bold></gradient><yellow> и выиграли </yellow><color:#EBD100>Armorkit</color><yellow>!</yellow>"
@@ -545,8 +646,260 @@ prizes:
         - "<gray>- Comparator x2</gray>"
         - "<gray>- Observer</gray>"
         - "<gray>- Dispenser</gray>"
+        - ''
+        - '<#e5f2b5>🎲 Chance: {chance}%</#e5f2b5>'
     prize:
       commands:
         - "[console] abroadcast player %player_name% [minimessage] <yellow>Вы открыли </yellow><color:#35D6DE>ᴄᴀꜱᴇ</color> <gradient:#6944C1:#8B5CF6><bold>/ꜰʀᴇᴇ</bold></gradient><yellow> и выиграли </yellow><color:#EBD100>Mechanismkit</color><yellow>!</yellow>"
         - "[console] aitemscreator give %player_name% chest_mechanismkit 1 -s"
     weight: 250
+
+  '39':
+    display:
+      material: "LIME_WOOL"
+      name: "<green><bold>VIP</bold></green><white> for 15 days</white>"
+      lore:
+        - ''
+        - '<gray>Temporary rank reward</gray>'
+        - '<#e5f2b5>Chance: {chance}%</#e5f2b5>'
+    prize:
+      commands:
+        - "[console] lp user %player_name% parent addtemp temp-vip 15d accumulate"
+        - "[console] abroadcast all [minimessage] <gray><bold>|</bold></gray> <green><bold>%player_name%</bold></green> <yellow>just opened </yellow><color:#35D6DE>FREE</color> <gradient:#6944C1:#8B5CF6><bold>/CASE</bold></gradient><yellow> and received </yellow><green><bold>VIP</bold></green><yellow> for 15 days</yellow>"
+    weight: 700
+    checkAlternatives:
+      - type: any
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_supreme%"
+            output: "yes"
+          - type: "string equals"
+            input: "%luckperms_inherits_group_ultra%"
+            output: "yes"
+          - type: "string equals"
+            input: "%luckperms_inherits_group_elite%"
+            output: "yes"
+          - type: "string equals"
+            input: "%luckperms_inherits_group_premium%"
+            output: "yes"
+          - type: "string equals"
+            input: "%luckperms_inherits_group_vip%"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all [minimessage] <gray><bold>|</bold></gray> <green><bold>%player_name%</bold></green> <yellow>just opened </yellow><color:#35D6DE>FREE</color> <gradient:#6944C1:#8B5CF6><bold>/CASE</bold></gradient><yellow> and received </yellow><green><bold>VIP</bold></green><yellow> for 15 days</yellow>"
+            - "[console] abroadcast player %player_name% [minimessage] <gray><bold>|</bold></gray> <yellow>You already have this or a higher permanent rank, so you receive </yellow><dark_red><bold><></bold></dark_red><green>200</green>"
+            - "[console] mplaceholders givecrons %player_name% 200"
+      - type: all
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_temp-supreme%"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all [minimessage] <gray><bold>|</bold></gray> <green><bold>%player_name%</bold></green> <yellow>just opened </yellow><color:#35D6DE>FREE</color> <gradient:#6944C1:#8B5CF6><bold>/CASE</bold></gradient><yellow> and received </yellow><green><bold>VIP</bold></green><yellow> for 15 days</yellow>"
+            - "[console] abroadcast player %player_name% [minimessage] <gray><bold>|</bold></gray> <yellow>You already have a higher temporary rank, so its duration was extended by 15 days.</yellow>"
+            - "[console] lp user %player_name% parent addtemp temp-supreme 15d accumulate"
+      - type: all
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_temp-ultra%"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all [minimessage] <gray><bold>|</bold></gray> <green><bold>%player_name%</bold></green> <yellow>just opened </yellow><color:#35D6DE>FREE</color> <gradient:#6944C1:#8B5CF6><bold>/CASE</bold></gradient><yellow> and received </yellow><green><bold>VIP</bold></green><yellow> for 15 days</yellow>"
+            - "[console] abroadcast player %player_name% [minimessage] <gray><bold>|</bold></gray> <yellow>You already have a higher temporary rank, so its duration was extended by 15 days.</yellow>"
+            - "[console] lp user %player_name% parent addtemp temp-ultra 15d accumulate"
+      - type: all
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_temp-elite%"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all [minimessage] <gray><bold>|</bold></gray> <green><bold>%player_name%</bold></green> <yellow>just opened </yellow><color:#35D6DE>FREE</color> <gradient:#6944C1:#8B5CF6><bold>/CASE</bold></gradient><yellow> and received </yellow><green><bold>VIP</bold></green><yellow> for 15 days</yellow>"
+            - "[console] abroadcast player %player_name% [minimessage] <gray><bold>|</bold></gray> <yellow>You already have a higher temporary rank, so its duration was extended by 15 days.</yellow>"
+            - "[console] lp user %player_name% parent addtemp temp-elite 15d accumulate"
+      - type: all
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_temp-premium%"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all [minimessage] <gray><bold>|</bold></gray> <green><bold>%player_name%</bold></green> <yellow>just opened </yellow><color:#35D6DE>FREE</color> <gradient:#6944C1:#8B5CF6><bold>/CASE</bold></gradient><yellow> and received </yellow><green><bold>VIP</bold></green><yellow> for 15 days</yellow>"
+            - "[console] abroadcast player %player_name% [minimessage] <gray><bold>|</bold></gray> <yellow>You already have a higher temporary rank, so its duration was extended by 15 days.</yellow>"
+            - "[console] lp user %player_name% parent addtemp temp-premium 15d accumulate"
+      - type: all
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_temp-vip%"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all [minimessage] <gray><bold>|</bold></gray> <green><bold>%player_name%</bold></green> <yellow>just opened </yellow><color:#35D6DE>FREE</color> <gradient:#6944C1:#8B5CF6><bold>/CASE</bold></gradient><yellow> and received </yellow><green><bold>VIP</bold></green><yellow> for 15 days</yellow>"
+            - "[console] abroadcast player %player_name% [minimessage] <gray><bold>|</bold></gray> <yellow>You already have this temporary rank, so its duration was extended by 15 days.</yellow>"
+            - "[console] lp user %player_name% parent addtemp temp-vip 15d accumulate"
+
+  '40':
+    display:
+      material: "LIGHT_BLUE_WOOL"
+      name: "<aqua><bold>Premium</bold></aqua><white> for 15 days</white>"
+      lore:
+        - ''
+        - '<gray>Temporary rank reward</gray>'
+        - '<#e5f2b5>Chance: {chance}%</#e5f2b5>'
+    prize:
+      commands:
+        - "[console] lp user %player_name% parent addtemp temp-premium 15d accumulate"
+        - "[console] abroadcast all [minimessage] <gray><bold>|</bold></gray> <green><bold>%player_name%</bold></green> <yellow>just opened </yellow><color:#35D6DE>FREE</color> <gradient:#6944C1:#8B5CF6><bold>/CASE</bold></gradient><yellow> and received </yellow><aqua><bold>Premium</bold></aqua><yellow> for 15 days</yellow>"
+    weight: 350
+    checkAlternatives:
+      - type: any
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_supreme%"
+            output: "yes"
+          - type: "string equals"
+            input: "%luckperms_inherits_group_ultra%"
+            output: "yes"
+          - type: "string equals"
+            input: "%luckperms_inherits_group_elite%"
+            output: "yes"
+          - type: "string equals"
+            input: "%luckperms_inherits_group_premium%"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all [minimessage] <gray><bold>|</bold></gray> <green><bold>%player_name%</bold></green> <yellow>just opened </yellow><color:#35D6DE>FREE</color> <gradient:#6944C1:#8B5CF6><bold>/CASE</bold></gradient><yellow> and received </yellow><aqua><bold>Premium</bold></aqua><yellow> for 15 days</yellow>"
+            - "[console] abroadcast player %player_name% [minimessage] <gray><bold>|</bold></gray> <yellow>You already have this or a higher permanent rank, so you receive </yellow><dark_red><bold><></bold></dark_red><green>275</green>"
+            - "[console] mplaceholders givecrons %player_name% 275"
+      - type: all
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_temp-supreme%"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all [minimessage] <gray><bold>|</bold></gray> <green><bold>%player_name%</bold></green> <yellow>just opened </yellow><color:#35D6DE>FREE</color> <gradient:#6944C1:#8B5CF6><bold>/CASE</bold></gradient><yellow> and received </yellow><aqua><bold>Premium</bold></aqua><yellow> for 15 days</yellow>"
+            - "[console] abroadcast player %player_name% [minimessage] <gray><bold>|</bold></gray> <yellow>You already have a higher temporary rank, so its duration was extended by 15 days.</yellow>"
+            - "[console] lp user %player_name% parent addtemp temp-supreme 15d accumulate"
+      - type: all
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_temp-ultra%"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all [minimessage] <gray><bold>|</bold></gray> <green><bold>%player_name%</bold></green> <yellow>just opened </yellow><color:#35D6DE>FREE</color> <gradient:#6944C1:#8B5CF6><bold>/CASE</bold></gradient><yellow> and received </yellow><aqua><bold>Premium</bold></aqua><yellow> for 15 days</yellow>"
+            - "[console] abroadcast player %player_name% [minimessage] <gray><bold>|</bold></gray> <yellow>You already have a higher temporary rank, so its duration was extended by 15 days.</yellow>"
+            - "[console] lp user %player_name% parent addtemp temp-ultra 15d accumulate"
+      - type: all
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_temp-elite%"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all [minimessage] <gray><bold>|</bold></gray> <green><bold>%player_name%</bold></green> <yellow>just opened </yellow><color:#35D6DE>FREE</color> <gradient:#6944C1:#8B5CF6><bold>/CASE</bold></gradient><yellow> and received </yellow><aqua><bold>Premium</bold></aqua><yellow> for 15 days</yellow>"
+            - "[console] abroadcast player %player_name% [minimessage] <gray><bold>|</bold></gray> <yellow>You already have a higher temporary rank, so its duration was extended by 15 days.</yellow>"
+            - "[console] lp user %player_name% parent addtemp temp-elite 15d accumulate"
+      - type: all
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_temp-premium%"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all [minimessage] <gray><bold>|</bold></gray> <green><bold>%player_name%</bold></green> <yellow>just opened </yellow><color:#35D6DE>FREE</color> <gradient:#6944C1:#8B5CF6><bold>/CASE</bold></gradient><yellow> and received </yellow><aqua><bold>Premium</bold></aqua><yellow> for 15 days</yellow>"
+            - "[console] abroadcast player %player_name% [minimessage] <gray><bold>|</bold></gray> <yellow>You already have this temporary rank, so its duration was extended by 15 days.</yellow>"
+            - "[console] lp user %player_name% parent addtemp temp-premium 15d accumulate"
+
+  '41':
+    display:
+      material: "LIME_CONCRETE"
+      name: "<green><bold>VIP</bold></green><white> for 30 days</white>"
+      glowing: true
+      lore:
+        - ''
+        - '<gray>Temporary rank reward</gray>'
+        - '<#e5f2b5>Chance: {chance}%</#e5f2b5>'
+    prize:
+      commands:
+        - "[console] lp user %player_name% parent addtemp temp-vip 30d accumulate"
+        - "[console] abroadcast all [minimessage] <gray><bold>|</bold></gray> <green><bold>%player_name%</bold></green> <yellow>just opened </yellow><color:#35D6DE>FREE</color> <gradient:#6944C1:#8B5CF6><bold>/CASE</bold></gradient><yellow> and received </yellow><green><bold>VIP</bold></green><yellow> for 30 days</yellow>"
+    weight: 200
+    checkAlternatives:
+      - type: any
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_supreme%"
+            output: "yes"
+          - type: "string equals"
+            input: "%luckperms_inherits_group_ultra%"
+            output: "yes"
+          - type: "string equals"
+            input: "%luckperms_inherits_group_elite%"
+            output: "yes"
+          - type: "string equals"
+            input: "%luckperms_inherits_group_premium%"
+            output: "yes"
+          - type: "string equals"
+            input: "%luckperms_inherits_group_vip%"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all [minimessage] <gray><bold>|</bold></gray> <green><bold>%player_name%</bold></green> <yellow>just opened </yellow><color:#35D6DE>FREE</color> <gradient:#6944C1:#8B5CF6><bold>/CASE</bold></gradient><yellow> and received </yellow><green><bold>VIP</bold></green><yellow> for 30 days</yellow>"
+            - "[console] abroadcast player %player_name% [minimessage] <gray><bold>|</bold></gray> <yellow>You already have this or a higher permanent rank, so you receive </yellow><dark_red><bold><></bold></dark_red><green>200</green>"
+            - "[console] mplaceholders givecrons %player_name% 200"
+      - type: all
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_temp-supreme%"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all [minimessage] <gray><bold>|</bold></gray> <green><bold>%player_name%</bold></green> <yellow>just opened </yellow><color:#35D6DE>FREE</color> <gradient:#6944C1:#8B5CF6><bold>/CASE</bold></gradient><yellow> and received </yellow><green><bold>VIP</bold></green><yellow> for 30 days</yellow>"
+            - "[console] abroadcast player %player_name% [minimessage] <gray><bold>|</bold></gray> <yellow>You already have a higher temporary rank, so its duration was extended by 30 days.</yellow>"
+            - "[console] lp user %player_name% parent addtemp temp-supreme 30d accumulate"
+      - type: all
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_temp-ultra%"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all [minimessage] <gray><bold>|</bold></gray> <green><bold>%player_name%</bold></green> <yellow>just opened </yellow><color:#35D6DE>FREE</color> <gradient:#6944C1:#8B5CF6><bold>/CASE</bold></gradient><yellow> and received </yellow><green><bold>VIP</bold></green><yellow> for 30 days</yellow>"
+            - "[console] abroadcast player %player_name% [minimessage] <gray><bold>|</bold></gray> <yellow>You already have a higher temporary rank, so its duration was extended by 30 days.</yellow>"
+            - "[console] lp user %player_name% parent addtemp temp-ultra 30d accumulate"
+      - type: all
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_temp-elite%"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all [minimessage] <gray><bold>|</bold></gray> <green><bold>%player_name%</bold></green> <yellow>just opened </yellow><color:#35D6DE>FREE</color> <gradient:#6944C1:#8B5CF6><bold>/CASE</bold></gradient><yellow> and received </yellow><green><bold>VIP</bold></green><yellow> for 30 days</yellow>"
+            - "[console] abroadcast player %player_name% [minimessage] <gray><bold>|</bold></gray> <yellow>You already have a higher temporary rank, so its duration was extended by 30 days.</yellow>"
+            - "[console] lp user %player_name% parent addtemp temp-elite 30d accumulate"
+      - type: all
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_temp-premium%"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all [minimessage] <gray><bold>|</bold></gray> <green><bold>%player_name%</bold></green> <yellow>just opened </yellow><color:#35D6DE>FREE</color> <gradient:#6944C1:#8B5CF6><bold>/CASE</bold></gradient><yellow> and received </yellow><green><bold>VIP</bold></green><yellow> for 30 days</yellow>"
+            - "[console] abroadcast player %player_name% [minimessage] <gray><bold>|</bold></gray> <yellow>You already have a higher temporary rank, so its duration was extended by 30 days.</yellow>"
+            - "[console] lp user %player_name% parent addtemp temp-premium 30d accumulate"
+      - type: all
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_temp-vip%"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all [minimessage] <gray><bold>|</bold></gray> <green><bold>%player_name%</bold></green> <yellow>just opened </yellow><color:#35D6DE>FREE</color> <gradient:#6944C1:#8B5CF6><bold>/CASE</bold></gradient><yellow> and received </yellow><green><bold>VIP</bold></green><yellow> for 30 days</yellow>"
+            - "[console] abroadcast player %player_name% [minimessage] <gray><bold>|</bold></gray> <yellow>You already have this temporary rank, so its duration was extended by 30 days.</yellow>"
+            - "[console] lp user %player_name% parent addtemp temp-vip 30d accumulate"
+

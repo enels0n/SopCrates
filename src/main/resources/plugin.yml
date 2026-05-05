@@ -7,4 +7,3 @@ softdepend: [PlaceholderAPI, ABroadcast, FancyHolograms]
 api-version: 1.16
 commands:
   sopcrates:
-    aliases: [acrates]

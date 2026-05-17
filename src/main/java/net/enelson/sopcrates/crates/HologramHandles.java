@@ -8,8 +8,8 @@ final class HologramHandles {
 	}
 
 	static HologramHandle create(String name) {
-		if (Bukkit.getPluginManager().isPluginEnabled("FancyHolograms")) {
-			return new FancyHologramHandle(name);
+		if (Bukkit.getPluginManager().isPluginEnabled("SopDisplays")) {
+			return new SopDisplaysHologramHandle(name);
 		}
 		return new NoopHologramHandle();
 	}

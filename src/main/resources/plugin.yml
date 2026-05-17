@@ -3,7 +3,7 @@ main: net.enelson.sopcrates.SopCrates
 version: ${project.version}
 authors: [E_NeLsOn]
 depend: [SopLib]
-softdepend: [PlaceholderAPI, ABroadcast, FancyHolograms]
+softdepend: [PlaceholderAPI, SopDisplays]
 api-version: 1.16
 commands:
   sopcrates:

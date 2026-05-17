@@ -1,0 +1,1177 @@
+displayName: "<#00DB73><bold>ᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx <color:#555555>(</color><color:#1A729E>%page%</color><color:#555555>/</color><color:#1A729E>%pages%</color><color:#555555>)</color>" #inventory
+
+#if the player have no key
+denyCommands:
+  - "[console] abroadcast player %player_name% %acolor_<#EEDAB0>%❣ ###alocales_cases_message-need-key-1### %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx%acolor_<#EEDAB0>% ###alocales_cases_message-need-key-2###"
+denyPush: true
+
+#if the case is already opening
+denyOpeningCommands:
+  - "[console] abroadcast player %player_name% %acolor_<#EEDAB0>%┃ &l###alocales_cases_message-already-opening###"
+denyOpeningPush: false
+
+key:
+  name: "<#00DB73><bold>ᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx <#35D6DE>ᴋᴇʏ"
+  lore:
+    - ""
+    - "&7┃ ###alocales_cases_key-lore-1### <#00DB73><bold>ᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx&7###alocales_cases_key-lore-2###"
+    - ""
+  item: TRIPWIRE_HOOK
+  model: 1102
+
+keyType: key
+spin:
+  duration: 5.5s
+  offset:
+    x: 0.0
+    y: 0.95
+    z: 0.0
+
+hologram:
+  enabled: false
+  hideWhileSpinning: true
+  offset:
+    x: 0.0
+    y: 1.85
+    z: 0.0
+
+firework:
+  offset:
+    x: 0.0
+    y: 0.7
+    z: 0.0
+
+open_commands: []
+
+# 
+# [minimessage] -> https://docs.advntr.dev/minimessage/format.html
+# other formating -> https://github.com/Iridium-Development/IridiumColorAPI
+
+prizes:
+  '0':
+    display:
+      name: "%acolor_<#C8B3FF>%Cage #1"
+      material: TUFF_BRICKS
+    prize:
+      commands:
+        - "[console] lp user %player_name% permission set soppillars.cage.1 true pillars"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #1"
+        - "[console] abroadcast player %player_name% &7&l┃ &6Чтобы установить косметику, используйте команду &6/cosmetics"
+    weight: 4000
+    checkAlternatives:
+      - type: any
+        checks:
+          - type: "has perm"
+            input: "soppillars.cage.1"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #1"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Взамен уже имеющейся клетки ты получаешь &7⛁500"
+            - "[console] eco give %player_name% 500 silver"
+  '1':
+    display:
+      name: "%acolor_<#C8B3FF>%Cage #2"
+      material: SPRUCE_PLANKS
+    prize:
+      commands:
+        - "[console] lp user %player_name% permission set soppillars.cage.2 true pillars"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #2"
+        - "[console] abroadcast player %player_name% &7&l┃ &6Чтобы установить косметику, используйте команду &6/cosmetics"
+    weight: 4000
+    checkAlternatives:
+      - type: any
+        checks:
+          - type: "has perm"
+            input: "soppillars.cage.2"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #2"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Взамен уже имеющейся клетки ты получаешь &7⛁500"
+            - "[console] eco give %player_name% 500 silver"
+  '2':
+    display:
+      name: "%acolor_<#C8B3FF>%Cage #3"
+      material: ANDESITE
+    prize:
+      commands:
+        - "[console] lp user %player_name% permission set soppillars.cage.3 true pillars"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #3"
+        - "[console] abroadcast player %player_name% &7&l┃ &6Чтобы установить косметику, используйте команду &6/cosmetics"
+    weight: 4000
+    checkAlternatives:
+      - type: any
+        checks:
+          - type: "has perm"
+            input: "soppillars.cage.3"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #3"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Взамен уже имеющейся клетки ты получаешь &7⛁500"
+            - "[console] eco give %player_name% 500 silver"
+  '3':
+    display:
+      name: "%acolor_<#C8B3FF>%Cage #4"
+      material: PRISMARINE_BRICKS
+    prize:
+      commands:
+        - "[console] lp user %player_name% permission set soppillars.cage.4 true pillars"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #4"
+        - "[console] abroadcast player %player_name% &7&l┃ &6Чтобы установить косметику, используйте команду &6/cosmetics"
+    weight: 4000
+    checkAlternatives:
+      - type: any
+        checks:
+          - type: "has perm"
+            input: "soppillars.cage.4"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #4"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Взамен уже имеющейся клетки ты получаешь &7⛁500"
+            - "[console] eco give %player_name% 500 silver"
+  '4':
+    display:
+      name: "%acolor_<#C8B3FF>%Cage #5"
+      material: DEEPSLATE_BRICKS
+    prize:
+      commands:
+        - "[console] lp user %player_name% permission set soppillars.cage.5 true pillars"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #5"
+        - "[console] abroadcast player %player_name% &7&l┃ &6Чтобы установить косметику, используйте команду &6/cosmetics"
+    weight: 4000
+    checkAlternatives:
+      - type: any
+        checks:
+          - type: "has perm"
+            input: "soppillars.cage.5"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #5"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Взамен уже имеющейся клетки ты получаешь &7⛁500"
+            - "[console] eco give %player_name% 500 silver"
+  '5':
+    display:
+      name: "%acolor_<#C8B3FF>%Cage #6"
+      material: BIRCH_PLANKS
+    prize:
+      commands:
+        - "[console] lp user %player_name% permission set soppillars.cage.6 true pillars"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #6"
+        - "[console] abroadcast player %player_name% &7&l┃ &6Чтобы установить косметику, используйте команду &6/cosmetics"
+    weight: 4000
+    checkAlternatives:
+      - type: any
+        checks:
+          - type: "has perm"
+            input: "soppillars.cage.6"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #6"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Взамен уже имеющейся клетки ты получаешь &7⛁500"
+            - "[console] eco give %player_name% 500 silver"
+  '6':
+    display:
+      name: "%acolor_<#C8B3FF>%Cage #7"
+      material: WAXED_OXIDIZED_CUT_COPPER
+    prize:
+      commands:
+        - "[console] lp user %player_name% permission set soppillars.cage.7 true pillars"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #7"
+        - "[console] abroadcast player %player_name% &7&l┃ &6Чтобы установить косметику, используйте команду &6/cosmetics"
+    weight: 4000
+    checkAlternatives:
+      - type: any
+        checks:
+          - type: "has perm"
+            input: "soppillars.cage.7"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #7"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Взамен уже имеющейся клетки ты получаешь &7⛁500"
+            - "[console] eco give %player_name% 500 silver"
+  '7':
+    display:
+      name: "%acolor_<#C8B3FF>%Cage #8"
+      material: CHISELED_QUARTZ_BLOCK
+    prize:
+      commands:
+        - "[console] lp user %player_name% permission set soppillars.cage.8 true pillars"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #8"
+        - "[console] abroadcast player %player_name% &7&l┃ &6Чтобы установить косметику, используйте команду &6/cosmetics"
+    weight: 4000
+    checkAlternatives:
+      - type: any
+        checks:
+          - type: "has perm"
+            input: "soppillars.cage.8"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #8"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Взамен уже имеющейся клетки ты получаешь &7⛁500"
+            - "[console] eco give %player_name% 500 silver"
+  '8':
+    display:
+      name: "%acolor_<#C8B3FF>%Cage #9"
+      material: NETHERRACK
+    prize:
+      commands:
+        - "[console] lp user %player_name% permission set soppillars.cage.9 true pillars"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #9"
+        - "[console] abroadcast player %player_name% &7&l┃ &6Чтобы установить косметику, используйте команду &6/cosmetics"
+    weight: 4000
+    checkAlternatives:
+      - type: any
+        checks:
+          - type: "has perm"
+            input: "soppillars.cage.9"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #9"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Взамен уже имеющейся клетки ты получаешь &7⛁500"
+            - "[console] eco give %player_name% 500 silver"
+  '9':
+    display:
+      name: "%acolor_<#C8B3FF>%Cage #10"
+      material: LIME_STAINED_GLASS
+    prize:
+      commands:
+        - "[console] lp user %player_name% permission set soppillars.cage.10 true pillars"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #10"
+        - "[console] abroadcast player %player_name% &7&l┃ &6Чтобы установить косметику, используйте команду &6/cosmetics"
+    weight: 4000
+    checkAlternatives:
+      - type: any
+        checks:
+          - type: "has perm"
+            input: "soppillars.cage.10"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #10"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Взамен уже имеющейся клетки ты получаешь &7⛁500"
+            - "[console] eco give %player_name% 500 silver"
+  '10':
+    display:
+      name: "%acolor_<#C8B3FF>%Cage #12"
+      material: RED_NETHER_BRICKS
+    prize:
+      commands:
+        - "[console] lp user %player_name% permission set soppillars.cage.12 true pillars"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #12"
+        - "[console] abroadcast player %player_name% &7&l┃ &6Чтобы установить косметику, используйте команду &6/cosmetics"
+    weight: 4000
+    checkAlternatives:
+      - type: any
+        checks:
+          - type: "has perm"
+            input: "soppillars.cage.12"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #12"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Взамен уже имеющейся клетки ты получаешь &7⛁500"
+            - "[console] eco give %player_name% 500 silver"
+  '11':
+    display:
+      name: "%acolor_<#C8B3FF>%Cage #15"
+      material: SEA_LANTERN
+    prize:
+      commands:
+        - "[console] lp user %player_name% permission set soppillars.cage.15 true pillars"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #15"
+        - "[console] abroadcast player %player_name% &7&l┃ &6Чтобы установить косметику, используйте команду &6/cosmetics"
+    weight: 4000
+    checkAlternatives:
+      - type: any
+        checks:
+          - type: "has perm"
+            input: "soppillars.cage.15"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #15"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Взамен уже имеющейся клетки ты получаешь &7⛁500"
+            - "[console] eco give %player_name% 500 silver"
+  '12':
+    display:
+      name: "%acolor_<#C8B3FF>%Cage #16"
+      material: BONE_BLOCK
+    prize:
+      commands:
+        - "[console] lp user %player_name% permission set soppillars.cage.16 true pillars"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #16"
+        - "[console] abroadcast player %player_name% &7&l┃ &6Чтобы установить косметику, используйте команду &6/cosmetics"
+    weight: 4000
+    checkAlternatives:
+      - type: any
+        checks:
+          - type: "has perm"
+            input: "soppillars.cage.16"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #16"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Взамен уже имеющейся клетки ты получаешь &7⛁500"
+            - "[console] eco give %player_name% 500 silver"
+  '13':
+    display:
+      name: "%acolor_<#C8B3FF>%Cage #19"
+      material: LANTERN
+    prize:
+      commands:
+        - "[console] lp user %player_name% permission set soppillars.cage.19 true pillars"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #19"
+        - "[console] abroadcast player %player_name% &7&l┃ &6Чтобы установить косметику, используйте команду &6/cosmetics"
+    weight: 4000
+    checkAlternatives:
+      - type: any
+        checks:
+          - type: "has perm"
+            input: "soppillars.cage.19"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #19"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Взамен уже имеющейся клетки ты получаешь &7⛁500"
+            - "[console] eco give %player_name% 500 silver"
+  '14':
+    display:
+      name: "%acolor_<#C8B3FF>%Cage #21"
+      material: MUD_BRICKS
+    prize:
+      commands:
+        - "[console] lp user %player_name% permission set soppillars.cage.21 true pillars"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #21"
+        - "[console] abroadcast player %player_name% &7&l┃ &6Чтобы установить косметику, используйте команду &6/cosmetics"
+    weight: 4000
+    checkAlternatives:
+      - type: any
+        checks:
+          - type: "has perm"
+            input: "soppillars.cage.21"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #21"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Взамен уже имеющейся клетки ты получаешь &7⛁500"
+            - "[console] eco give %player_name% 500 silver"
+
+  '48':
+    display:
+      name: "%acolor_<#C8B3FF>%Cage #17"
+      material: GLOW_BERRIES
+    prize:
+      commands:
+        - "[console] lp user %player_name% permission set soppillars.cage.17 true pillars"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #17"
+        - "[console] abroadcast player %player_name% &7&l┃ &6Чтобы установить косметику, используйте команду &6/cosmetics"
+    weight: 4000
+    checkAlternatives:
+      - type: any
+        checks:
+          - type: "has perm"
+            input: "soppillars.cage.17"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #17"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Взамен уже имеющейся клетки ты получаешь &4&l◇&4100"
+            - "[console] mplaceholders givecrons %player_name% 100"
+  '49':
+    display:
+      name: "%acolor_<#C8B3FF>%Cage #20"
+      material: FIREWORK_ROCKET
+    prize:
+      commands:
+        - "[console] lp user %player_name% permission set soppillars.cage.20 true pillars"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #20"
+        - "[console] abroadcast player %player_name% &7&l┃ &6Чтобы установить косметику, используйте команду &6/cosmetics"
+    weight: 4000
+    checkAlternatives:
+      - type: any
+        checks:
+          - type: "has perm"
+            input: "soppillars.cage.20"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #20"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Взамен уже имеющейся клетки ты получаешь &4&l◇&4100"
+            - "[console] mplaceholders givecrons %player_name% 100"
+  '50':
+    display:
+      name: "%acolor_<#C8B3FF>%Cage #22"
+      material: TNT
+    prize:
+      commands:
+        - "[console] lp user %player_name% permission set soppillars.cage.22 true pillars"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #22"
+        - "[console] abroadcast player %player_name% &7&l┃ &6Чтобы установить косметику, используйте команду &6/cosmetics"
+    weight: 4000
+    checkAlternatives:
+      - type: any
+        checks:
+          - type: "has perm"
+            input: "soppillars.cage.22"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #22"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Взамен уже имеющейся клетки ты получаешь &4&l◇&4100"
+            - "[console] mplaceholders givecrons %player_name% 100"
+  '501':
+    display:
+      name: "%acolor_<#C8B3FF>%Cage #24"
+      material: SHULKER_BOX
+    prize:
+      commands:
+        - "[console] lp user %player_name% permission set soppillars.cage.24 true pillars"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #24"
+        - "[console] abroadcast player %player_name% &7&l┃ &6Чтобы установить косметику, используйте команду &6/cosmetics"
+    weight: 4000
+    checkAlternatives:
+      - type: any
+        checks:
+          - type: "has perm"
+            input: "soppillars.cage.24"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #24"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Взамен уже имеющейся клетки ты получаешь &4&l◇&4100"
+            - "[console] mplaceholders givecrons %player_name% 100"
+  '502':
+    display:
+      name: "%acolor_<#C8B3FF>%Cage #25"
+      material: GHAST_SPAWN_EGG
+    prize:
+      commands:
+        - "[console] lp user %player_name% permission set soppillars.cage.25 true pillars"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #25"
+        - "[console] abroadcast player %player_name% &7&l┃ &6Чтобы установить косметику, используйте команду &6/cosmetics"
+    weight: 4000
+    checkAlternatives:
+      - type: any
+        checks:
+          - type: "has perm"
+            input: "soppillars.cage.25"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #25"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Взамен уже имеющейся клетки ты получаешь &4&l◇&4100"
+            - "[console] mplaceholders givecrons %player_name% 100"
+  '503':
+    display:
+      name: "%acolor_<#C8B3FF>%Cage #26"
+      material: ACACIA_SLAB
+    prize:
+      commands:
+        - "[console] lp user %player_name% permission set soppillars.cage.26 true pillars"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #26"
+        - "[console] abroadcast player %player_name% &7&l┃ &6Чтобы установить косметику, используйте команду &6/cosmetics"
+    weight: 4000
+    checkAlternatives:
+      - type: any
+        checks:
+          - type: "has perm"
+            input: "soppillars.cage.26"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Cage #26"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Взамен уже имеющейся клетки ты получаешь &4&l◇&4100"
+            - "[console] mplaceholders givecrons %player_name% 100"
+
+  '15':
+    display:
+      material: "PAPER"
+      name: "Суффикс 1 - Sacred"
+    prize:
+      commands:
+        - "[console] lp user %player_name% permission set sopprefix.unlocked.suffix_title.sacred"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Суффикс 1 \"&fSacred&3\""
+    weight: 2500
+    checkAlternatives:
+      - type: all
+        checks:
+          - type: "has perm"
+            input: "sopprefix.unlocked.suffix_title.sacred"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Суффикс 1 \"&fSacred&3\""
+            - "[console] abroadcast player %player_name% &7&l┃ &6У вас уже имеется этот суффикс, взамен вы получаете компенсацию &4&l◇&4100"
+            - "[console] mplaceholders givecrons %player_name% 100"
+  '16':
+    display:
+      material: "PAPER"
+      name: "Суффикс 1 - Abu"
+    prize:
+      commands:
+        - "[console] lp user %player_name% permission set sopprefix.unlocked.suffix_title.abu"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Суффикс 1 \"&fAbu&3\""
+    weight: 2500
+    checkAlternatives:
+      - type: all
+        checks:
+          - type: "has perm"
+            input: "sopprefix.unlocked.suffix_title.abu"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Суффикс 1 \"&fAbu&3\""
+            - "[console] abroadcast player %player_name% &7&l┃ &6У вас уже имеется этот суффикс, взамен вы получаете компенсацию &4&l◇&4100"
+            - "[console] mplaceholders givecrons %player_name% 100"
+  '17':
+    display:
+      material: "PAPER"
+      name: "Суффикс 1 - Furious"
+    prize:
+      commands:
+        - "[console] lp user %player_name% permission set sopprefix.unlocked.suffix_title.furious"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Суффикс 1 \"&fFurious&3\""
+    weight: 2500
+    checkAlternatives:
+      - type: all
+        checks:
+          - type: "has perm"
+            input: "sopprefix.unlocked.suffix_title.furious"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Суффикс 1 \"&fFurious&3\""
+            - "[console] abroadcast player %player_name% &7&l┃ &6У вас уже имеется этот суффикс, взамен вы получаете компенсацию &4&l◇&4100"
+            - "[console] mplaceholders givecrons %player_name% 100"
+  '18':
+    display:
+      material: "PAPER"
+      name: "Суффикс 1 - Mine"
+    prize:
+      commands:
+        - "[console] lp user %player_name% permission set sopprefix.unlocked.suffix_title.mine"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Суффикс 1 \"&fMine&3\""
+    weight: 2500
+    checkAlternatives:
+      - type: all
+        checks:
+          - type: "has perm"
+            input: "sopprefix.unlocked.suffix_title.mine"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Суффикс 1 \"&fMine&3\""
+            - "[console] abroadcast player %player_name% &7&l┃ &6У вас уже имеется этот суффикс, взамен вы получаете компенсацию &4&l◇&4100"
+            - "[console] mplaceholders givecrons %player_name% 100"
+  '19':
+    display:
+      material: "PAPER"
+      name: "Суффикс 2 - Bob"
+    prize:
+      commands:
+        - "[console] lp user %player_name% permission set sopprefix.unlocked.suffix_icon.bob"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Суффикс 2 \"&fBob&3\""
+    weight: 2500
+    checkAlternatives:
+      - type: all
+        checks:
+          - type: "has perm"
+            input: "sopprefix.unlocked.suffix_icon.bob"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Суффикс 2 \"&fBob&3\""
+            - "[console] abroadcast player %player_name% &7&l┃ &6У вас уже имеется этот суффикс, взамен вы получаете компенсацию &4&l◇&4100"
+            - "[console] mplaceholders givecrons %player_name% 100"
+  '20':
+    display:
+      material: "PAPER"
+      name: "Суффикс 2 - Knight"
+    prize:
+      commands:
+        - "[console] lp user %player_name% permission set sopprefix.unlocked.suffix_icon.knight"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Суффикс 2 \"&fKnight&3\""
+    weight: 2500
+    checkAlternatives:
+      - type: all
+        checks:
+          - type: "has perm"
+            input: "sopprefix.unlocked.suffix_icon.knight"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Суффикс 2 \"&fKnight&3\""
+            - "[console] abroadcast player %player_name% &7&l┃ &6У вас уже имеется этот суффикс, взамен вы получаете компенсацию &4&l◇&4100"
+            - "[console] mplaceholders givecrons %player_name% 100"
+  '21':
+    display:
+      material: "PAPER"
+      name: "Суффикс 2 - Elf"
+    prize:
+      commands:
+        - "[console] lp user %player_name% permission set sopprefix.unlocked.suffix_icon.elf"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Суффикс 2 \"&fElf&3\""
+    weight: 2500
+    checkAlternatives:
+      - type: all
+        checks:
+          - type: "has perm"
+            input: "sopprefix.unlocked.suffix_icon.elf"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Суффикс 2 \"&fElf&3\""
+            - "[console] abroadcast player %player_name% &7&l┃ &6У вас уже имеется этот суффикс, взамен вы получаете компенсацию &4&l◇&4100"
+            - "[console] mplaceholders givecrons %player_name% 100"
+  '22':
+    display:
+      material: "PAPER"
+      name: "Суффикс 2 - Fury"
+    prize:
+      commands:
+        - "[console] lp user %player_name% permission set sopprefix.unlocked.suffix_icon.furry"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Суффикс 2 \"&fFury&3\""
+    weight: 2500
+    checkAlternatives:
+      - type: all
+        checks:
+          - type: "has perm"
+            input: "sopprefix.unlocked.suffix_icon.furry"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Суффикс 2 \"&fFury&3\""
+            - "[console] abroadcast player %player_name% &7&l┃ &6У вас уже имеется этот суффикс, взамен вы получаете компенсацию &4&l◇&4100"
+            - "[console] mplaceholders givecrons %player_name% 100"
+  '23':
+    display:
+      material: "PAPER"
+      name: "Суффикс 1 - Holy"
+    prize:
+      commands:
+        - "[console] lp user %player_name% permission set sopprefix.unlocked.suffix_title.holy"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Суффикс 1 \"&fHoly&3\""
+    weight: 1500
+    checkAlternatives:
+      - type: all
+        checks:
+          - type: "has perm"
+            input: "sopprefix.unlocked.suffix_title.holy"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Суффикс 1 \"&fHoly&3\""
+            - "[console] abroadcast player %player_name% &7&l┃ &6У вас уже имеется этот суффикс, взамен вы получаете компенсацию &4&l◇&4100"
+            - "[console] mplaceholders givecrons %player_name% 100"
+  '24':
+    display:
+      material: "PAPER"
+      name: "Суффикс 1 - Dark"
+    prize:
+      commands:
+        - "[console] lp user %player_name% permission set sopprefix.unlocked.suffix_title.dark"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Суффикс 1 \"&fDark&3\""
+    weight: 1500
+    checkAlternatives:
+      - type: all
+        checks:
+          - type: "has perm"
+            input: "sopprefix.unlocked.suffix_title.dark"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Суффикс 1 \"&fDark&3\""
+            - "[console] abroadcast player %player_name% &7&l┃ &6У вас уже имеется этот суффикс, взамен вы получаете компенсацию &4&l◇&4100"
+            - "[console] mplaceholders givecrons %player_name% 100"
+  '25':
+    display:
+      material: "PAPER"
+      name: "Суффикс 1 - Crazy"
+    prize:
+      commands:
+        - "[console] lp user %player_name% permission set sopprefix.unlocked.suffix_title.crazy"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Суффикс 1 \"&fCrazy&3\""
+    weight: 1500
+    checkAlternatives:
+      - type: all
+        checks:
+          - type: "has perm"
+            input: "sopprefix.unlocked.suffix_title.crazy"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Суффикс 1 \"&fCrazy&3\""
+            - "[console] abroadcast player %player_name% &7&l┃ &6У вас уже имеется этот суффикс, взамен вы получаете компенсацию &4&l◇&4100"
+            - "[console] mplaceholders givecrons %player_name% 100"
+  '26':
+    display:
+      material: "PAPER"
+      name: "Суффикс 2 - Angel"
+    prize:
+      commands:
+        - "[console] lp user %player_name% permission set sopprefix.unlocked.suffix_icon.angel"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Суффикс 2 \"&fAngel&3\""
+    weight: 1500
+    checkAlternatives:
+      - type: all
+        checks:
+          - type: "has perm"
+            input: "sopprefix.unlocked.suffix_icon.angel"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Суффикс 2 \"&fAngel&3\""
+            - "[console] abroadcast player %player_name% &7&l┃ &6У вас уже имеется этот суффикс, взамен вы получаете компенсацию &4&l◇&4100"
+            - "[console] mplaceholders givecrons %player_name% 100"
+  '27':
+    display:
+      material: "PAPER"
+      name: "Суффикс 2 - Abobus"
+    prize:
+      commands:
+        - "[console] lp user %player_name% permission set sopprefix.unlocked.suffix_icon.abobus"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Суффикс 2 \"&fAbobus&3\""
+    weight: 1500
+    checkAlternatives:
+      - type: all
+        checks:
+          - type: "has perm"
+            input: "sopprefix.unlocked.suffix_icon.abobus"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Суффикс 2 \"&fAbobus&3\""
+            - "[console] abroadcast player %player_name% &7&l┃ &6У вас уже имеется этот суффикс, взамен вы получаете компенсацию &4&l◇&4100"
+            - "[console] mplaceholders givecrons %player_name% 100"
+  '28':
+    display:
+      material: "PAPER"
+      name: "Суффикс 2 - Bandit"
+    prize:
+      commands:
+        - "[console] lp user %player_name% permission set sopprefix.unlocked.suffix_icon.bandit"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Суффикс 2 \"&fBandit&3\""
+    weight: 1500
+    checkAlternatives:
+      - type: all
+        checks:
+          - type: "has perm"
+            input: "sopprefix.unlocked.suffix_icon.bandit"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Суффикс 2 \"&fBandit&3\""
+            - "[console] abroadcast player %player_name% &7&l┃ &6У вас уже имеется этот суффикс, взамен вы получаете компенсацию &4&l◇&4100"
+            - "[console] mplaceholders givecrons %player_name% 100"
+  '29':
+    display:
+      material: "PAPER"
+      name: "Суффикс 2 - Bandos"
+    prize:
+      commands:
+        - "[console] lp user %player_name% permission set sopprefix.unlocked.suffix_icon.bandos"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Суффикс 2 \"&fBandos&3\""
+    weight: 1500
+    checkAlternatives:
+      - type: all
+        checks:
+          - type: "has perm"
+            input: "sopprefix.unlocked.suffix_icon.bandos"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Суффикс 2 \"&fBandos&3\""
+            - "[console] abroadcast player %player_name% &7&l┃ &6У вас уже имеется этот суффикс, взамен вы получаете компенсацию &4&l◇&4100"
+            - "[console] mplaceholders givecrons %player_name% 100"
+  '30':
+    display:
+      material: "PAPER"
+      name: "Суффикс 2 - Papa"
+    prize:
+      commands:
+        - "[console] lp user %player_name% permission set sopprefix.unlocked.suffix_icon.papa"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Суффикс 2 \"&fPapa&3\""
+    weight: 1500
+    checkAlternatives:
+      - type: all
+        checks:
+          - type: "has perm"
+            input: "sopprefix.unlocked.suffix_icon.papa"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Суффикс 2 \"&fPapa&3\""
+            - "[console] abroadcast player %player_name% &7&l┃ &6У вас уже имеется этот суффикс, взамен вы получаете компенсацию &4&l◇&4100"
+            - "[console] mplaceholders givecrons %player_name% 100"
+  '31':
+    display:
+      material: "PAPER"
+      name: "Суффикс 2 - Mama"
+    prize:
+      commands:
+        - "[console] lp user %player_name% permission set sopprefix.unlocked.suffix_icon.mama"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Суффикс 2 \"&fMama&3\""
+    weight: 1500
+    checkAlternatives:
+      - type: all
+        checks:
+          - type: "has perm"
+            input: "sopprefix.unlocked.suffix_icon.mama"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Суффикс 2 \"&fMama&3\""
+            - "[console] abroadcast player %player_name% &7&l┃ &6У вас уже имеется этот суффикс, взамен вы получаете компенсацию &4&l◇&4100"
+            - "[console] mplaceholders givecrons %player_name% 100"
+  '32':
+    display:
+      material: "PAPER"
+      name: "Суффикс 2 - Craft"
+    prize:
+      commands:
+        - "[console] lp user %player_name% permission set sopprefix.unlocked.suffix_icon.craft"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Суффикс 2 \"&fCraft&3\""
+    weight: 500
+    checkAlternatives:
+      - type: all
+        checks:
+          - type: "has perm"
+            input: "sopprefix.unlocked.suffix_icon.craft"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &3Суффикс 2 \"&fCraft&3\""
+            - "[console] abroadcast player %player_name% &7&l┃ &6У вас уже имеется этот суффикс, взамен вы получаете компенсацию &4&l◇&4100"
+            - "[console] mplaceholders givecrons %player_name% 100"
+
+  '51':
+    display:
+      name: "&aVIP&f for 15 days"
+      material: LIME_WOOL
+    prize:
+      commands:
+        - "[console] lp user %player_name% parent addtemp temp-vip 15d accumulate"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &aVIP &6на 15 дней"
+    weight: 1000
+    checkAlternatives:
+      - type: any
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_supreme%"
+            output: "yes"
+          - type: "string equals"
+            input: "%luckperms_inherits_group_ultra%"
+            output: "yes"
+          - type: "string equals"
+            input: "%luckperms_inherits_group_elite%"
+            output: "yes"
+          - type: "string equals"
+            input: "%luckperms_inherits_group_premium%"
+            output: "yes"
+          - type: "string equals"
+            input: "%luckperms_inherits_group_vip%"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &aVIP &6на 15 дней"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Взамен уже имеющейся привилегии ты получаешь &4&l◇&4200"
+            - "[console] mplaceholders givecrons %player_name% 200"
+      - type: all
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_temp-supreme"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &aVIP &6на 15 дней"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Т.к. у вас имеется более высокая временная привилегия, срок ее действия увеличивается на 15 дней."
+            - "[console] lp user %player_name% parent addtemp temp-supreme 15d accumulate"
+      - type: all
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_temp-ultra"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &aVIP &6на 15 дней"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Т.к. у вас имеется более высокая временная привилегия, срок ее действия увеличивается на 15 дней."
+            - "[console] lp user %player_name% parent addtemp temp-ultra 15d accumulate"
+      - type: all
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_temp-elite"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &aVIP &6на 15 дней"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Т.к. у вас имеется более высокая временная привилегия, срок ее действия увеличивается на 15 дней."
+            - "[console] lp user %player_name% parent addtemp temp-elite 15d accumulate"
+      - type: all
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_temp-premium"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &aVIP &6на 15 дней"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Т.к. у вас имеется более высокая временная привилегия, срок ее действия увеличивается на 15 дней."
+            - "[console] lp user %player_name% parent addtemp temp-premium 15d accumulate"
+      - type: all
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_temp-vip"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &aVIP &6на 15 дней"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Т.к. у вас уже имеется эта временная привилегия, срок ее действия увеличивается на 15 дней."
+            - "[console] lp user %player_name% parent addtemp temp-vip 15d accumulate"
+  '52':
+    display:
+      name: "&bPremium&f for 15 days"
+      material: LIGHT_BLUE_WOOL
+    prize:
+      commands:
+        - "[console] lp user %player_name% parent addtemp temp-premium 15d accumulate"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &bPremium &6на 15 дней"
+    weight: 700
+    checkAlternatives:
+      - type: any
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_supreme%"
+            output: "yes"
+          - type: "string equals"
+            input: "%luckperms_inherits_group_ultra%"
+            output: "yes"
+          - type: "string equals"
+            input: "%luckperms_inherits_group_elite%"
+            output: "yes"
+          - type: "string equals"
+            input: "%luckperms_inherits_group_premium%"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &bPremium &6на 15 дней"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Взамен уже имеющейся привилегии ты получаешь &4&l◇&4275"
+            - "[console] mplaceholders givecrons %player_name% 275"
+      - type: all
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_temp-supreme"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &bPremium &6на 15 дней"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Т.к. у вас имеется более высокая временная привилегия, срок ее действия увеличивается на 15 дней."
+            - "[console] lp user %player_name% parent addtemp temp-supreme 15d accumulate"
+      - type: all
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_temp-ultra"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &bPremium &6на 15 дней"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Т.к. у вас имеется более высокая временная привилегия, срок ее действия увеличивается на 15 дней."
+            - "[console] lp user %player_name% parent addtemp temp-ultra 15d accumulate"
+      - type: all
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_temp-elite"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &bPremium &6на 15 дней"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Т.к. у вас имеется более высокая временная привилегия, срок ее действия увеличивается на 15 дней."
+            - "[console] lp user %player_name% parent addtemp temp-elite 15d accumulate"
+      - type: all
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_temp-premium"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &bPremium &6на 15 дней"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Т.к. у вас уже имеется эта временная привилегия, срок ее действия увеличивается на 15 дней."
+            - "[console] lp user %player_name% parent addtemp temp-premium 15d accumulate"
+
+  '53':
+    display:
+      name: "&aVIP&f for 30 days"
+      material: LIME_CONCRETE
+      glowing: true
+    prize:
+      commands:
+        - "[console] lp user %player_name% parent addtemp temp-vip 30d accumulate"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &aVIP &6на 30 дней"
+    weight: 450
+    checkAlternatives:
+      - type: any
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_supreme%"
+            output: "yes"
+          - type: "string equals"
+            input: "%luckperms_inherits_group_ultra%"
+            output: "yes"
+          - type: "string equals"
+            input: "%luckperms_inherits_group_elite%"
+            output: "yes"
+          - type: "string equals"
+            input: "%luckperms_inherits_group_premium%"
+            output: "yes"
+          - type: "string equals"
+            input: "%luckperms_inherits_group_vip%"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &aVIP &6на 30 дней"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Взамен уже имеющейся привилегии ты получаешь &4&l◇&4200"
+            - "[console] mplaceholders givecrons %player_name% 200"
+      - type: all
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_temp-supreme"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &aVIP &6на 30 дней"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Т.к. у вас имеется более высокая временная привилегия, срок ее действия увеличивается на 30 дней."
+            - "[console] lp user %player_name% parent addtemp temp-supreme 30d accumulate"
+      - type: all
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_temp-ultra"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &aVIP &6на 30 дней"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Т.к. у вас имеется более высокая временная привилегия, срок ее действия увеличивается на 30 дней."
+            - "[console] lp user %player_name% parent addtemp temp-ultra 30d accumulate"
+      - type: all
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_temp-elite"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &aVIP &6на 30 дней"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Т.к. у вас имеется более высокая временная привилегия, срок ее действия увеличивается на 30 дней."
+            - "[console] lp user %player_name% parent addtemp temp-elite 30d accumulate"
+      - type: all
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_temp-premium"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &aVIP &6на 30 дней"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Т.к. у вас имеется более высокая временная привилегия, срок ее действия увеличивается на 30 дней."
+            - "[console] lp user %player_name% parent addtemp temp-premium 30d accumulate"
+      - type: all
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_temp-vip"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &aVIP &6на 30 дней"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Т.к. у вас уже имеется эта временная привилегия, срок ее действия увеличивается на 30 дней."
+            - "[console] lp user %player_name% parent addtemp temp-vip 30d accumulate"
+  '54':
+    display:
+      name: "&bPremium&f for 30 days"
+      material: LIGHT_BLUE_CONCRETE
+      glowing: true
+    prize:
+      commands:
+        - "[console] lp user %player_name% parent addtemp temp-premium 30d accumulate"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &bPremium &6на 30 дней"
+    weight: 350
+    checkAlternatives:
+      - type: any
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_supreme%"
+            output: "yes"
+          - type: "string equals"
+            input: "%luckperms_inherits_group_ultra%"
+            output: "yes"
+          - type: "string equals"
+            input: "%luckperms_inherits_group_elite%"
+            output: "yes"
+          - type: "string equals"
+            input: "%luckperms_inherits_group_premium%"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &bPremium &6на 30 дней"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Взамен уже имеющейся привилегии ты получаешь &4&l◇&4275"
+            - "[console] mplaceholders givecrons %player_name% 275"
+      - type: all
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_temp-supreme"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &bPremium &6на 30 дней"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Т.к. у вас имеется более высокая временная привилегия, срок ее действия увеличивается на 30 дней."
+            - "[console] lp user %player_name% parent addtemp temp-supreme 30d accumulate"
+      - type: all
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_temp-ultra"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &bPremium &6на 30 дней"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Т.к. у вас имеется более высокая временная привилегия, срок ее действия увеличивается на 30 дней."
+            - "[console] lp user %player_name% parent addtemp temp-ultra 30d accumulate"
+      - type: all
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_temp-elite"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &bPremium &6на 30 дней"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Т.к. у вас имеется более высокая временная привилегия, срок ее действия увеличивается на 30 дней."
+            - "[console] lp user %player_name% parent addtemp temp-elite 30d accumulate"
+      - type: all
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_temp-premium"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &bPremium &6на 30 дней"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Т.к. у вас уже имеется эта временная привилегия, срок ее действия увеличивается на 30 дней."
+            - "[console] lp user %player_name% parent addtemp temp-premium 30d accumulate"
+
+  '55':
+    display:
+      name: "&eElite&f for 15 days"
+      material: YELLOW_WOOL
+    prize:
+      commands:
+        - "[console] lp user %player_name% parent addtemp temp-elite 15d accumulate"
+        - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &eElite &6на 15 дней"
+    weight: 150
+    checkAlternatives:
+      - type: any
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_supreme%"
+            output: "yes"
+          - type: "string equals"
+            input: "%luckperms_inherits_group_ultra%"
+            output: "yes"
+          - type: "string equals"
+            input: "%luckperms_inherits_group_elite%"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &eElite &6на 15 дней"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Взамен уже имеющейся привилегии ты получаешь &4&l◇&4350"
+            - "[console] mplaceholders givecrons %player_name% 350"
+      - type: all
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_temp-supreme"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &eElite &6на 15 дней"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Т.к. у вас имеется более высокая временная привилегия, срок ее действия увеличивается на 15 дней."
+            - "[console] lp user %player_name% parent addtemp temp-supreme 15d accumulate"
+      - type: all
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_temp-ultra"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &eElite &6на 15 дней"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Т.к. у вас имеется более высокая временная привилегия, срок ее действия увеличивается на 15 дней."
+            - "[console] lp user %player_name% parent addtemp temp-ultra 15d accumulate"
+      - type: all
+        checks:
+          - type: "string equals"
+            input: "%luckperms_inherits_group_temp-elite"
+            output: "yes"
+        alternative:
+          commands:
+            - "[console] abroadcast all &7&l┃ &2&l%player_name% &6только что открыл %acolor_<#00DB73>%&lᴛʀᴇᴀꜱᴜʀᴇ ʙᴏx &6и получил оттуда &eElite &6на 15 дней"
+            - "[console] abroadcast player %player_name% &7&l┃ &6Т.к. у вас уже имеется эта временная привилегия, срок ее действия увеличивается на 15 дней."
+            - "[console] lp user %player_name% parent addtemp temp-elite 15d accumulate"

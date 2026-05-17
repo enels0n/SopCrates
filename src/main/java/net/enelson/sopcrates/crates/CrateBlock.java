@@ -144,6 +144,8 @@ public class CrateBlock {
 		double x = section.getDouble("offset.x", 0.0D);
 		double y = section.getDouble("offset.y", 1.85D);
 		double z = section.getDouble("offset.z", 0.0D);
+		float yaw = (float) section.getDouble("yaw", 0.0D);
+		float pitch = (float) section.getDouble("pitch", 0.0D);
 
 		List<String> lines = section.getStringList("lines");
 		if (lines == null || lines.isEmpty()) {
@@ -156,7 +158,7 @@ public class CrateBlock {
 		}
 
 		Map<String, Object> options = readOptions(section.getConfigurationSection("sopdisplays"));
-		return new CrateHologramEntry(handle, enabled, hideWhileSpinning, x, y, z, lines, options);
+		return new CrateHologramEntry(handle, enabled, hideWhileSpinning, x, y, z, yaw, pitch, lines, options);
 	}
 
 	private Map<String, Object> readOptions(ConfigurationSection section) {
@@ -182,17 +184,21 @@ public class CrateBlock {
 		private final double offsetX;
 		private final double offsetY;
 		private final double offsetZ;
+		private final float yaw;
+		private final float pitch;
 		private final List<String> lines;
 		private final Map<String, Object> options;
 		private boolean suppressed;
 
-		private CrateHologramEntry(HologramHandle handle, boolean enabled, boolean hideWhileSpinning, double offsetX, double offsetY, double offsetZ, List<String> lines, Map<String, Object> options) {
+		private CrateHologramEntry(HologramHandle handle, boolean enabled, boolean hideWhileSpinning, double offsetX, double offsetY, double offsetZ, float yaw, float pitch, List<String> lines, Map<String, Object> options) {
 			this.handle = handle;
 			this.enabled = enabled;
 			this.hideWhileSpinning = hideWhileSpinning;
 			this.offsetX = offsetX;
 			this.offsetY = offsetY;
 			this.offsetZ = offsetZ;
+			this.yaw = yaw;
+			this.pitch = pitch;
 			this.lines = lines;
 			this.options = options;
 			this.suppressed = false;
@@ -205,6 +211,8 @@ public class CrateBlock {
 			}
 			Location base = location.clone().add(0.5D, 0.5D, 0.5D);
 			Location hologramLocation = base.add(this.offsetX, this.offsetY, this.offsetZ);
+			hologramLocation.setYaw(this.yaw);
+			hologramLocation.setPitch(this.pitch);
 			this.handle.refresh(hologramLocation, this.lines, this.options);
 		}
 	}

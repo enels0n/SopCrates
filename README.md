@@ -67,6 +67,13 @@ Each crate file can define:
 - preview display items
 - reward commands and reward items
 
+Holograms also support:
+
+- `offset.x/y/z`
+- `yaw`
+- `pitch`
+- per-entry `sopdisplays` overrides when using the multi-hologram format
+
 ## Holograms
 
 `SopCrates` supports crate holograms through an internal abstraction:
@@ -75,6 +82,23 @@ Each crate file can define:
 - noop fallback when no hologram provider is available
 
 This makes crate holograms optional instead of hard-required.
+
+Example:
+
+```yml
+hologram:
+  enabled: true
+  hideWhileSpinning: true
+  offset:
+    x: 0.0
+    y: 1.85
+    z: 0.0
+  yaw: 180.0
+  pitch: 0.0
+  lines:
+    - "<gold><bold>Example Case</bold></gold>"
+    - "<gray>Right click to open</gray>"
+```
 
 ## Placeholders
 

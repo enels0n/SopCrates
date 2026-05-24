@@ -8,6 +8,7 @@ import net.enelson.sopcrates.SopCrates;
 import java.util.Collections;
 import java.util.HashMap;
 import java.lang.reflect.Method;
+import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
@@ -76,6 +77,32 @@ final class SopDisplaysHologramHandle implements HologramHandle {
         }
     }
 
+    @Override
+    public void ensurePresent() {
+        if (this.hidden || this.lastLocation == null) {
+            return;
+        }
+
+        Object manager = resolveManager();
+        if (manager == null) {
+            return;
+        }
+
+        Object ids = invoke(manager, "getIds", new Class<?>[0]);
+        if (!(ids instanceof Collection<?>)) {
+            refresh(this.lastLocation, this.lastLines, this.lastOptions);
+            return;
+        }
+
+        for (Object id : (Collection<?>) ids) {
+            if (id != null && this.name.equalsIgnoreCase(String.valueOf(id))) {
+                return;
+            }
+        }
+
+        refresh(this.lastLocation, this.lastLines, this.lastOptions);
+    }
+
     private Object resolveManager() {
         try {
             Plugin plugin = Bukkit.getPluginManager().getPlugin("SopDisplays");
@@ -96,6 +123,15 @@ final class SopDisplaysHologramHandle implements HologramHandle {
             return result instanceof Boolean && (Boolean) result;
         } catch (Throwable ignored) {
             return false;
+        }
+    }
+
+    private Object invoke(Object target, String methodName, Class<?>[] parameterTypes, Object... args) {
+        try {
+            Method method = target.getClass().getMethod(methodName, parameterTypes);
+            return method.invoke(target, args);
+        } catch (Throwable ignored) {
+            return null;
         }
     }
 }

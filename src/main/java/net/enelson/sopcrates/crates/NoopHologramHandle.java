@@ -21,4 +21,8 @@ final class NoopHologramHandle implements HologramHandle {
 	@Override
 	public void remove() {
 	}
+
+	@Override
+	public void ensurePresent() {
+	}
 }

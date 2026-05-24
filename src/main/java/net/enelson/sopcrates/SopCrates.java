@@ -6,6 +6,7 @@ import net.enelson.sopcrates.crates.CratesManager;
 import net.enelson.sopcrates.listeners.ArmorStandInteract;
 import net.enelson.sopcrates.listeners.FireworkHandler;
 import net.enelson.sopcrates.listeners.InteractBlockHandler;
+import net.enelson.sopcrates.listeners.SopDisplaysLifecycleListener;
 import net.enelson.sopli.lib.SopLib;
 import org.bukkit.Bukkit;
 import org.bukkit.command.PluginCommand;
@@ -47,10 +48,20 @@ public final class SopCrates extends JavaPlugin {
         pluginManager.registerEvents(new ArmorStandInteract(), this);
         pluginManager.registerEvents(new FireworkHandler(), this);
         pluginManager.registerEvents(new InteractBlockHandler(), this);
+        pluginManager.registerEvents(new SopDisplaysLifecycleListener(), this);
 
         if (pluginManager.isPluginEnabled("PlaceholderAPI")) {
             new Placeholder().register();
         }
+
+        getServer().getScheduler().runTaskTimer(this, new Runnable() {
+            @Override
+            public void run() {
+                if (manager != null && pluginManager.isPluginEnabled("SopDisplays")) {
+                    manager.ensureExternalHologramsPresent();
+                }
+            }
+        }, 100L, 100L);
     }
 
     @Override

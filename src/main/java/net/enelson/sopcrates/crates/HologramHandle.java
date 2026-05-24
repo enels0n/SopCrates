@@ -9,4 +9,5 @@ interface HologramHandle {
 	void hide();
 	void show();
 	void remove();
+	void ensurePresent();
 }

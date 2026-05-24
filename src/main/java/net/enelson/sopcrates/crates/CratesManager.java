@@ -302,6 +302,13 @@ public class CratesManager {
 		this.refreshCrates();
 		this.refreshCrateBlocks();
 	}
+
+	public void ensureExternalHologramsPresent() {
+		if (this.blocks == null || this.blocks.isEmpty()) {
+			return;
+		}
+		this.blocks.forEach(CrateBlock::ensureHologramPresent);
+	}
 	
 	public void onDisable() {
 		this.crates.stream().forEach(c -> c.getMayPrizes().getViewers().forEach(v -> ((Player)v).closeInventory()));

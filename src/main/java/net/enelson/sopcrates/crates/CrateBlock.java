@@ -65,6 +65,12 @@ public class CrateBlock {
 		}
 	}
 
+	public void ensureHologramPresent() {
+		for (CrateHologramEntry entry : this.holograms) {
+			entry.ensurePresent();
+		}
+	}
+
 	public void suppressHologram() {
 		for (CrateHologramEntry entry : this.holograms) {
 			if (!entry.hideWhileSpinning) {
@@ -214,6 +220,13 @@ public class CrateBlock {
 			hologramLocation.setYaw(this.yaw);
 			hologramLocation.setPitch(this.pitch);
 			this.handle.refresh(hologramLocation, this.lines, this.options);
+		}
+
+		private void ensurePresent() {
+			if (!this.enabled || this.suppressed) {
+				return;
+			}
+			this.handle.ensurePresent();
 		}
 	}
 }

@@ -23,6 +23,7 @@ import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.scheduler.BukkitTask;
 
 import net.enelson.sopcrates.SopCrates;
+import net.enelson.sopcrates.event.CrateOpenEvent;
 import net.enelson.sopcrates.utils.Utils;
 
 public class OpenCrate {
@@ -77,6 +78,8 @@ public class OpenCrate {
             forceStop();
             return;
         }
+
+        Bukkit.getPluginManager().callEvent(new CrateOpenEvent(player, crateBlock.getCrateName()));
 
         this.spinDurationTicks = resolveSpinDurationTicks(crateConfig);
         this.totalShifts = resolveTotalShifts(this.spinDurationTicks);
